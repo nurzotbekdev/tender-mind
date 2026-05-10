@@ -1,0 +1,15 @@
+<>
+  <Navbar />     
+  
+  <Hero />
+  <Marquee />
+  <Features />
+  <HowItWorks />
+  <Pricing />
+  <FAQ />
+  <Testimonials />
+  <Blog />
+  <Contact />
+  
+  <Footer />
+</>

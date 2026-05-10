@@ -1,26 +1,206 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --prim: #b6ff3b;
+
+  --font-poppins: "Poppins", sans-serif;
+  --font-inter: "Inter", sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.Poppins {
+  font-family: var(--font-poppins);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.Inter {
+  font-family: var(--font-inter);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  font-family: var(--font-poppins);
+  overflow-x: hidden !important;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before,
+.btn::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0;
+  z-index: 0;
+  transition:
+    transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1),
+    opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+
+  transform: translate(100%, -25%);
+}
+
+.btn:hover::before,
+.btn:hover::after {
+  opacity: 0.15;
+}
+
+.btn:hover::before {
+  transform: translate3d(50%, 0, 0) scale(0.9);
+}
+
+.btn:hover::after {
+  transform: translate3d(50%, 0, 0) scale(1.1);
+}
+
+.btn > * {
+  position: relative;
+  z-index: 2;
+}
+
+.hero {
+  background-image: url(../public/hero-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(
+    at center center,
+    #02010100 0%,
+    #060a10 65%
+  );
+  opacity: 0.4;
+  z-index: -1;
+}
+
+/* Marquee Text */
+.marquee-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 50s linear infinite;
+}
+
+.marquee-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Features */
+.features-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.features-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0)
+  );
+  z-index: 0;
+}
+
+.features-card::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 40%;
+  height: 3px;
+  background: linear-gradient(90deg, #b6ff3b);
+  box-shadow: 0 0 20px #b6ff3b;
+  border-radius: 2px;
+  z-index: 100;
+}
+
+.features-card > * {
+  position: relative;
+  z-index: 2;
+}
+
+.features-icon::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.342),
+    rgba(255, 255, 255, 0)
+  );
+  opacity: 0.3;
+  z-index: 10;
+}
+
+/* HowItWork */
+.howItWork {
+  position: relative;
+  background-image: url("/hero-bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.howItWork::after {
+  content: "";
+  position: absolute;
+  background-image: radial-gradient(
+    at center center,
+    #02010100 0%,
+    #060a10 65%
+  );
+  opacity: 0.2;
+  z-index: 0;
+}
+
+/* Faqs */
+.faqs {
+  background-image: url(../public/hero-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
