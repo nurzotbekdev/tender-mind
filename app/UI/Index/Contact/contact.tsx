@@ -94,69 +94,67 @@ function Contact() {
             </div>
           </div>
 
-          <div className="w-full xl:w-[60%]">
+          <div className="w-full xl:w-[55%]">
             <div className="rounded-xl bg-[#0B0F1A] border-2 border-[#2A3555] py-6 sm:px-8 px-5 cursor-pointer hover:border-(--prim)">
               <h1 className="text-2xl sm:text-3xl text-white font-semibold">
                 {t("quick_contact_form")}
               </h1>
 
-              <form className="mt-6">
-                <div className="flex xl:flex-row flex-col items-center gap-5">
-                  <div className="flex flex-col gap-2 w-full">
+              <form className="space-y-5">
+                <div className="flex flex-col sm:flex-row gap-5 mt-4">
+                  <div className="flex flex-col gap-2 flex-1 w-full">
                     <span className="text-sm text-gray-500">
                       {t("first_name")}
                     </span>
                     <input
                       type="text"
                       placeholder={t("enter_first_name")}
-                      className="placeholder:text-gray-400 placeholder:text-sm py-2 px-4 border border-[#2A3555] focus:outline-none focus:border-(--prim) text-gray-300 rounded-md bg-black/40"
+                      className="w-full py-2 px-4 border border-[#2A3555] focus:border-[#b6ff3b] text-gray-300 rounded-md bg-black/40 outline-none"
                     />
                   </div>
-
-                  <div className="flex flex-col gap-2 w-full">
+                  <div className="flex flex-col gap-2 flex-1 w-full">
                     <span className="text-sm text-gray-500">
                       {t("last_name")}
                     </span>
                     <input
                       type="text"
                       placeholder={t("enter_last_name")}
-                      className="placeholder:text-gray-400 placeholder:text-sm py-2 px-4 border border-[#2A3555] focus:outline-none focus:border-(--prim) text-gray-300 rounded-md bg-black/40"
+                      className="w-full py-2 px-4 border border-[#2A3555] focus:border-[#b6ff3b] text-gray-300 rounded-md bg-black/40 outline-none"
                     />
                   </div>
                 </div>
 
-                <div className="flex xl:flex-row flex-col items-center gap-5 mt-5 xl:mt-8 2xl:mt-10">
-                  <div className="flex flex-col gap-2 w-full">
+                <div className="flex flex-col sm:flex-row gap-5">
+                  <div className="flex flex-col gap-2 flex-1 w-full">
                     <span className="text-sm text-gray-500">{t("email")}</span>
                     <input
                       type="email"
                       placeholder="email@example.com"
-                      className="placeholder:text-gray-400 placeholder:text-sm py-2 px-4 border border-[#2A3555] focus:outline-none focus:border-(--prim) text-gray-300 rounded-md bg-black/40"
+                      className="w-full py-2 px-4 border border-[#2A3555] focus:border-[#b6ff3b] text-gray-300 rounded-md bg-black/40 outline-none"
                     />
                   </div>
-
-                  <div className="flex flex-col gap-2 w-full">
+                  <div className="flex flex-col gap-2 flex-1 w-full">
                     <span className="text-sm text-gray-500">{t("phone")}</span>
                     <input
                       type="tel"
                       placeholder="+998 (90) 123-4567"
-                      className="placeholder:text-gray-400 placeholder:text-sm py-2 px-4 border border-[#2A3555] focus:outline-none focus:border-(--prim) text-gray-300 rounded-md bg-black/40"
+                      className="w-full py-2 px-4 border border-[#2A3555] focus:border-[#b6ff3b] text-gray-300 rounded-md bg-black/40 outline-none"
                     />
                   </div>
                 </div>
 
-                <div className="flex flex-col gap-2 mt-5 xl:mt-8 2xl:mt-10">
+                <div className="flex flex-col gap-2">
                   <span className="text-sm text-gray-500">{t("message")}</span>
                   <textarea
                     placeholder={t("enter_message")}
-                    rows={6}
-                    className="placeholder:text-gray-400 placeholder:text-sm py-2 px-4 border border-[#2A3555] focus:outline-none focus:border-(--prim) text-gray-300 rounded-md bg-black/40"
+                    rows={5}
+                    className="w-full py-3 px-4 border border-[#2A3555] focus:border-[#b6ff3b] text-gray-300 rounded-md bg-black/40 outline-none resize-none"
                   ></textarea>
                 </div>
 
-                <button className="xl:my-8 2xl:my-10 my-5 flex items-center justify-center gap-1 bg-(--prim) py-2 w-full rounded font-semibold text-lg uppercase cursor-pointer hover:shadow-[0_0_10px_#b6ff3b]">
+                <button className="mt-4 flex items-center justify-center gap-2 bg-[#b6ff3b] py-3 w-full rounded font-bold text-black uppercase hover:bg-[#a5e635] transition-all shadow-lg shadow-lime-900/20">
                   {t("send")}
-                  <ArrowRight className="w-5 h-5 text-black" />
+                  <ArrowRight className="w-5 h-5" />
                 </button>
 
                 <p className="text-gray-400 text-sm font-medium flex items-center gap-2 justify-center">
