@@ -17,12 +17,12 @@ function Pricing() {
           {t("pricing")}
         </div>
 
-        <h1 className="pt-5 text-2xl md:text-5xl text-white font-semibold text-center">
+        <h1 className="pt-5 text-2xl lg:text-4xl xl:text-5xl text-white font-semibold text-center">
           {t("choose")} <br />{" "}
           <span className="text-lime-400">{t("_pricing")}</span>
         </h1>
 
-        <p className="text-gray-400 text-sm md:text-lg mt-3 lg:w-[40%] w-full text-center Inter">
+        <p className="text-gray-400 text-sm lg:text-base xl:text-lg mt-3 lg:w-[60%] w-full text-center Inter">
           {t("choose_best_plan")}
         </p>
 

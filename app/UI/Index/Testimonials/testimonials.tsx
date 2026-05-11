@@ -72,7 +72,7 @@ function Testimonials() {
               <span className="text-lime-400">{t("reviews_subtitle1")}</span>
             </h1>
 
-            <p className="text-gray-300 text-sm md:text-lg Inter w-full xl:w-[65%] mt-2">
+            <p className="text-gray-300 text-sm lg:text-base xl:text-lg Inter w-full 2xl:w-[65%] mt-2">
               {t("reviews_description")}
             </p>
           </div>

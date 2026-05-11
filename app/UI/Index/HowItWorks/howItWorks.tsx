@@ -56,15 +56,15 @@ function HowItWorks() {
               key={item.id}
               className="bg-[#152026] p-4 rounded-lg relative flex items-start cursor-pointer hover:-translate-y-2 transition-all duration-500"
             >
-              <div className="rounded-full text-lime-300 flex items-center justify-center p-3 w-5 h-5 border border-lime-300">
+              <div className="rounded-full text-lime-300 flex items-center justify-center p-3 w-2 h-2 border border-lime-300">
                 {item.id}
               </div>
 
               <div className="flex items-center mt-6">
-                <Image src={item.image} alt="icon" width={150} height={260} />
+                <Image src={item.image} alt="icon" width={120} height={260} />
 
                 <div>
-                  <h1 className="text-xl text-white mb-6 mt-2">
+                  <h1 className="text-lg xl:text-xl text-white mb-6 mt-2">
                     {t(`${item.title}`)}
                   </h1>
                   <p className="text-sm text-gray-400"> {t(`${item.desc}`)}</p>
@@ -79,49 +79,49 @@ function HowItWorks() {
             {t("how_it_works")}?
           </h1>
 
-          <div className="grid grid-cols-4 gap-4 my-8 w-full">
+          <div className="grid grid-cols-4 gap-2 my-8 w-full">
             <div className="flex items-center gap-2 justify-around">
               <div className="flex items-center gap-2">
-                <div className="rounded-full p-4 border border-(--prim) flex items-center justify-center">
-                  <Search className="w-6 h-6 text-lime-400" />
+                <div className="rounded-full p-3 border border-(--prim) flex items-center justify-center">
+                  <Search className="w-5 h-5 text-lime-400" />
                 </div>
                 <h1 className="text-white whitespace-pre-line text-sm">
                   {t("step_auto_search")}
                 </h1>
               </div>
 
-              <div className="w-20 h-0 border-b-[3px] border-dotted border-[#acdb29] opacity-80 shadow-[0_0_8px_1px_rgba(172,219,41,0.6)]"></div>
+              <div className="w-15 h-0 border-b-[3px] border-dotted border-[#acdb29] opacity-80 shadow-[0_0_8px_1px_rgba(172,219,41,0.6)]"></div>
             </div>
 
             <div className="flex items-center gap-2 justify-around">
               <div className="flex items-center gap-2">
-                <div className="rounded-full p-4 border border-(--prim) flex items-center justify-center">
-                  <Database className="w-6 h-6 text-lime-400" />
+                <div className="rounded-full p-3 border border-(--prim) flex items-center justify-center">
+                  <Database className="w-5 h-5 text-lime-400" />
                 </div>
                 <h1 className="text-white whitespace-pre-line text-sm">
                   {t("step_data_analysis")}
                 </h1>
               </div>
 
-              <div className="w-20 h-0 border-b-[3px] border-dotted border-[#acdb29] opacity-80 shadow-[0_0_8px_1px_rgba(172,219,41,0.6)]"></div>
+              <div className="w-15 h-0 border-b-[3px] border-dotted border-[#acdb29] opacity-80 shadow-[0_0_8px_1px_rgba(172,219,41,0.6)]"></div>
             </div>
 
             <div className="flex items-center gap-2 justify-around">
               <div className="flex items-center gap-2">
-                <div className="rounded-full p-4 border border-(--prim) flex items-center justify-center">
-                  <BarChart3 className="w-6 h-6 text-lime-400" />
+                <div className="rounded-full p-3 border border-(--prim) flex items-center justify-center">
+                  <BarChart3 className="w-5 h-5 text-lime-400" />
                 </div>
                 <h1 className="text-white whitespace-pre-line text-sm">
                   {t("step_best_strategy")}
                 </h1>
               </div>
 
-              <div className="w-20 h-0 border-b-[3px] border-dotted border-[#acdb29] opacity-80 shadow-[0_0_8px_1px_rgba(172,219,41,0.6)]"></div>
+              <div className="w-15 h-0 border-b-[3px] border-dotted border-[#acdb29] opacity-80 shadow-[0_0_8px_1px_rgba(172,219,41,0.6)]"></div>
             </div>
 
             <div className="flex items-center gap-2">
-              <div className="rounded-full p-4 border border-(--prim) flex items-center justify-center">
-                <FileText className="w-6 h-6 text-lime-400" />
+              <div className="rounded-full p-3 border border-(--prim) flex items-center justify-center">
+                <FileText className="w-5 h-5 text-lime-400" />
               </div>
               <h1 className="text-white whitespace-pre-line text-sm">
                 {t("step_documents_ready")}

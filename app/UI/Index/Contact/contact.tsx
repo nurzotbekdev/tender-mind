@@ -93,6 +93,7 @@ function Contact() {
               ))}
             </div>
           </div>
+
           <div className="w-full xl:w-[55%]">
             <div className="rounded-xl bg-[#0B0F1A] border-2 border-[#2A3555] py-6 sm:px-8 px-5 cursor-pointer hover:border-(--prim)">
               <h1 className="text-2xl sm:text-3xl text-white font-semibold">
