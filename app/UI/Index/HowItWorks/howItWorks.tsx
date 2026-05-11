@@ -85,7 +85,7 @@ function HowItWorks() {
                 <div className="rounded-full p-3 border border-(--prim) flex items-center justify-center">
                   <Search className="w-5 h-5 text-lime-400" />
                 </div>
-                <h1 className="text-white whitespace-pre-line text-sm">
+                <h1 className="text-white whitespace-pre-line text-xs 2xl:text-sm">
                   {t("step_auto_search")}
                 </h1>
               </div>
@@ -98,7 +98,7 @@ function HowItWorks() {
                 <div className="rounded-full p-3 border border-(--prim) flex items-center justify-center">
                   <Database className="w-5 h-5 text-lime-400" />
                 </div>
-                <h1 className="text-white whitespace-pre-line text-sm">
+                <h1 className="text-white whitespace-pre-line text-xs 2xl:text-sm">
                   {t("step_data_analysis")}
                 </h1>
               </div>
@@ -111,7 +111,7 @@ function HowItWorks() {
                 <div className="rounded-full p-3 border border-(--prim) flex items-center justify-center">
                   <BarChart3 className="w-5 h-5 text-lime-400" />
                 </div>
-                <h1 className="text-white whitespace-pre-line text-sm">
+                <h1 className="text-white whitespace-pre-line text-xs 2xl:text-sm">
                   {t("step_best_strategy")}
                 </h1>
               </div>
@@ -123,7 +123,7 @@ function HowItWorks() {
               <div className="rounded-full p-3 border border-(--prim) flex items-center justify-center">
                 <FileText className="w-5 h-5 text-lime-400" />
               </div>
-              <h1 className="text-white whitespace-pre-line text-sm">
+              <h1 className="text-white whitespace-pre-line text-xs 2xl:text-sm">
                 {t("step_documents_ready")}
               </h1>
             </div>
