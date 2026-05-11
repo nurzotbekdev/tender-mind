@@ -94,14 +94,14 @@ function Contact() {
             </div>
           </div>
 
-          <div className="w-full xl:w-[55%]">
+          <div className="w-full xl:w-[60%]">
             <div className="rounded-xl bg-[#0B0F1A] border-2 border-[#2A3555] py-6 sm:px-8 px-5 cursor-pointer hover:border-(--prim)">
               <h1 className="text-2xl sm:text-3xl text-white font-semibold">
                 {t("quick_contact_form")}
               </h1>
 
               <form className="mt-6">
-                <div className="flex 2xl:flex-row flex-col items-center gap-5">
+                <div className="flex xl:flex-row flex-col items-center gap-5">
                   <div className="flex flex-col gap-2 w-full">
                     <span className="text-sm text-gray-500">
                       {t("first_name")}
@@ -125,7 +125,7 @@ function Contact() {
                   </div>
                 </div>
 
-                <div className="flex 2xl:flex-row flex-col items-center gap-5 mt-5 xl:mt-8 2xl:mt-10">
+                <div className="flex xl:flex-row flex-col items-center gap-5 mt-5 xl:mt-8 2xl:mt-10">
                   <div className="flex flex-col gap-2 w-full">
                     <span className="text-sm text-gray-500">{t("email")}</span>
                     <input
