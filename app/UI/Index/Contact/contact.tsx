@@ -49,17 +49,17 @@ function Contact() {
           {t("contact_title")}
         </div>
 
-        <div className="flex flex-col xl:flex-row items-end justify-between gap-6">
-          <div className="w-full xl:w-[40%]">
+        <div className="flex flex-col 2xl:flex-row items-end justify-between gap-6">
+          <div className="w-full 2xl:w-[40%]">
             <h1 className="text-2xl md:text-4xl font-semibold text-gray-200 mt-6 whitespace-pre-line">
               {t("contact_subtitle")} <br />
               <span className="text-lime-400">{t("contact_subtitle1")}</span>
             </h1>
 
-            <p className="text-gray-300 text-sm md:text-lg Inter w-full mt-3">
+            <p className="text-gray-300 text-sm 2xl:text-lg Inter w-full mt-3">
               {t("contact_description")}
             </p>
-            <p className="text-gray-300 text-sm md:text-lg Inter w-full">
+            <p className="text-gray-300 text-sm 2xl:text-lg Inter w-full">
               {t("contact_channels")}
             </p>
 
@@ -94,14 +94,14 @@ function Contact() {
             </div>
           </div>
 
-          <div className="w-full xl:w-[55%]">
+          <div className="w-full 2xl:w-[55%]">
             <div className="rounded-xl bg-[#0B0F1A] border-2 border-[#2A3555] py-6 sm:px-8 px-5 cursor-pointer hover:border-(--prim)">
               <h1 className="text-2xl sm:text-3xl text-white font-semibold">
                 {t("quick_contact_form")}
               </h1>
 
               <form className="mt-6">
-                <div className="flex sm:flex-row flex-col items-center gap-5">
+                <div className="flex 2xl:flex-row flex-col items-center gap-5">
                   <div className="flex flex-col gap-2 w-full">
                     <span className="text-sm text-gray-500">
                       {t("first_name")}
@@ -125,7 +125,7 @@ function Contact() {
                   </div>
                 </div>
 
-                <div className="flex sm:flex-row flex-col items-center gap-5 mt-5 sm:mt-10">
+                <div className="flex 2xl:flex-row flex-col items-center gap-5 mt-5 xl:mt-8 2xl:mt-10">
                   <div className="flex flex-col gap-2 w-full">
                     <span className="text-sm text-gray-500">{t("email")}</span>
                     <input
@@ -145,7 +145,7 @@ function Contact() {
                   </div>
                 </div>
 
-                <div className="flex flex-col gap-2 mt-5 sm:mt-10">
+                <div className="flex flex-col gap-2 mt-5 xl:mt-8 2xl:mt-10">
                   <span className="text-sm text-gray-500">{t("message")}</span>
                   <textarea
                     placeholder={t("enter_message")}
@@ -154,7 +154,7 @@ function Contact() {
                   ></textarea>
                 </div>
 
-                <button className="sm:my-10 my-5 flex items-center justify-center gap-1 bg-(--prim) py-2 w-full rounded font-semibold text-lg uppercase cursor-pointer hover:shadow-[0_0_10px_#b6ff3b]">
+                <button className="xl:my-8 2xl:my-10 my-5 flex items-center justify-center gap-1 bg-(--prim) py-2 w-full rounded font-semibold text-lg uppercase cursor-pointer hover:shadow-[0_0_10px_#b6ff3b]">
                   {t("send")}
                   <ArrowRight className="w-5 h-5 text-black" />
                 </button>
