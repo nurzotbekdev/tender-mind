@@ -49,8 +49,8 @@ function Contact() {
           {t("contact_title")}
         </div>
 
-        <div className="flex flex-col 2xl:flex-row items-end justify-between gap-6">
-          <div className="w-full 2xl:w-[40%]">
+        <div className="flex flex-col xl:flex-row items-end justify-between gap-6">
+          <div className="w-full xl:w-[40%]">
             <h1 className="text-2xl md:text-4xl font-semibold text-gray-200 mt-6 whitespace-pre-line">
               {t("contact_subtitle")} <br />
               <span className="text-lime-400">{t("contact_subtitle1")}</span>
@@ -94,7 +94,7 @@ function Contact() {
             </div>
           </div>
 
-          <div className="w-full 2xl:w-[55%]">
+          <div className="w-full xl:w-[55%]">
             <div className="rounded-xl bg-[#0B0F1A] border-2 border-[#2A3555] py-6 sm:px-8 px-5 cursor-pointer hover:border-(--prim)">
               <h1 className="text-2xl sm:text-3xl text-white font-semibold">
                 {t("quick_contact_form")}
