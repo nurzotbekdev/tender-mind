@@ -55,7 +55,7 @@ function Features() {
           <div className="w-full lg:w-[50%] hidden lg:flex"></div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 lg:gap-3 sm:gap-6 mt-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-3 sm:gap-6 mt-6">
           {featuresData.map((item) => (
             <div
               key={item.id}
