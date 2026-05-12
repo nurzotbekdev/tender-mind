@@ -112,6 +112,7 @@ function Contact() {
                       className="w-full py-2 px-4 border border-[#2A3555] focus:border-[#b6ff3b] text-gray-300 rounded-md bg-black/40 outline-none"
                     />
                   </div>
+
                   <div className="flex flex-col gap-2 flex-1 w-full">
                     <span className="text-sm text-gray-500">
                       {t("last_name")}

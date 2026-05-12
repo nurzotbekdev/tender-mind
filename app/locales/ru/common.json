@@ -155,5 +155,9 @@
   "pages": "Страницы",
   "documents": "Документы",
   "news": "Новости",
-  "all_rights_reserved": "Все права защищены"
+  "all_rights_reserved": "Все права защищены",
+  "register": "Регистрация",
+  "password": "Пароль",
+  "already_have_account": "Уже есть аккаунт?",
+  "no_account": "Нет аккаунта?"
 }

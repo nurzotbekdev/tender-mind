@@ -155,5 +155,9 @@
   "pages": "Pages",
   "documents": "Documents",
   "news": "News",
-  "all_rights_reserved": "All rights reserved"
+  "all_rights_reserved": "All rights reserved",
+  "register": "Register",
+  "password": "Password",
+  "already_have_account": "Already have an account?",
+  "no_account": "Don't have an account?"
 }

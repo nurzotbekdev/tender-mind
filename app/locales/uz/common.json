@@ -155,5 +155,9 @@
   "pages": "Sahifalar",
   "documents": "Hujjatlar",
   "news": "Yangiliklar",
-  "all_rights_reserved": "Barcha huquqlar himoyalangan"
+  "all_rights_reserved": "Barcha huquqlar himoyalangan",
+  "register": "Register",
+  "password": "Parol",
+  "already_have_account": "Akkountingiz bormi?",
+  "no_account": "Akkountingiz yo‘qmi?"
 }

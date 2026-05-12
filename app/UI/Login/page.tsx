@@ -1,9 +1,62 @@
 "use client";
 
+import Link from "next/link";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import { Eye, EyeOff } from "lucide-react";
+
 function Login() {
+  const { t } = useTranslation();
+  const [showPassword, setShowPassword] = useState<boolean>(false);
+
   return (
     <>
-      <h1>Login</h1>
+      <div className="h-screen flex items-center justify-center bg-black">
+        <form className="bg-[#0B1020] border border-[#2A3555] p-4 rounded-xl w-110 2xl:w-120 mx-[4%] hover:border-(--prim)">
+          <h1 className="text-white text-xl sm:text-2xl Inter font-semibold text-center pt-1">
+            {t("login")}
+          </h1>
+
+          <input
+            type="email"
+            placeholder={t("email")}
+            className="w-full py-2 px-4 border border-[#2A3555] focus:border-[#b6ff3b] text-gray-300 rounded-lg bg-black/40 outline-none mt-6"
+          />
+
+          <div className="relative mt-3">
+            <input
+              type={showPassword ? "text" : "password"}
+              placeholder={t("password")}
+              className="w-full py-2 px-4 border border-[#2A3555] focus:border-[#b6ff3b] text-gray-300 rounded-lg bg-black/40 outline-none"
+            />
+
+            <button
+              type="button"
+              onClick={() => setShowPassword(!showPassword)}
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 cursor-pointer"
+            >
+              {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
+            </button>
+          </div>
+
+          <button
+            type="button"
+            className="my-6 flex items-center justify-center gap-2 bg-(--prim) py-2 w-full Inter rounded-lg font-bold text-black hover:bg-[#a5e635] transition-all duration-300 cursor-pointer text-lg"
+          >
+            {t("login")}
+          </button>
+
+          <p className="text-center text-[#FFFFFF] text-sm mb-2">
+            {t("no_account")}{" "}
+            <Link
+              href="/UI/Register"
+              className="text-lime-300 hover:text-lime-400 transition-colors duration-300"
+            >
+              {t("register")}
+            </Link>
+          </p>
+        </form>
+      </div>
     </>
   );
 }

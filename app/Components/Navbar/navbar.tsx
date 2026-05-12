@@ -147,9 +147,11 @@ function Navbar() {
           </ul>
 
           {/*Login */}
-          <button className="bg-(--prim) px-6 py-1.5 rounded-lg cursor-pointer hover:shadow-[0_0_10px_#b6ff3b] font-medium btn overflow-hidden ease-[cubic-bezier(0.02,0.01,0.47,1)] z-0 rela">
-            {t("login")}
-          </button>
+          <Link href="UI/Login">
+            <button className="bg-(--prim) px-6 py-1.5 rounded-lg cursor-pointer hover:shadow-[0_0_10px_#b6ff3b] font-medium btn overflow-hidden ease-[cubic-bezier(0.02,0.01,0.47,1)] z-0 relative">
+              {t("login")}
+            </button>
+          </Link>
         </div>
 
         <div
@@ -170,9 +172,12 @@ function Navbar() {
               : "max-h-0 opacity-0"
           }`}
         >
-          <ul className="flex flex-col space-y-4 w-full Inter">
+          <ul className="flex flex-col space-y-4 w-full Inter ">
             <Link href="/" onClick={() => setActiveId("/")}>
-              <li className="text-base text-black bg-(--prim) cursor-pointer font-semibold px-6 py-1.5 rounded-sm">
+              <li
+                onClick={() => setOpenMenu(!openMenu)}
+                className="text-base text-black bg-(--prim) cursor-pointer font-semibold px-6 py-1.5 rounded-sm"
+              >
                 {t("home")}
               </li>
             </Link>
@@ -181,25 +186,37 @@ function Navbar() {
               href="#how_it_work"
               onClick={() => setActiveId("#how_it_work")}
             >
-              <li className="text-base text-black bg-(--prim) cursor-pointer font-semibold px-6 py-1.5 rounded-sm">
+              <li
+                onClick={() => setOpenMenu(!openMenu)}
+                className="text-base text-black bg-(--prim) cursor-pointer font-semibold px-6 py-1.5 rounded-sm"
+              >
                 {t("how_it_works")}
               </li>
             </Link>
 
             <Link href="#pricing" onClick={() => setActiveId("#pricing")}>
-              <li className="text-base text-black bg-(--prim) cursor-pointer font-semibold px-6 py-1.5 rounded-sm">
+              <li
+                onClick={() => setOpenMenu(!openMenu)}
+                className="text-base text-black bg-(--prim) cursor-pointer font-semibold px-6 py-1.5 rounded-sm"
+              >
                 {t("pricing")}
               </li>
             </Link>
 
             <Link href="#blog" onClick={() => setActiveId("#blog")}>
-              <li className="text-base text-black bg-(--prim) cursor-pointer font-semibold px-6 py-1.5 rounded-sm">
+              <li
+                onClick={() => setOpenMenu(!openMenu)}
+                className="text-base text-black bg-(--prim) cursor-pointer font-semibold px-6 py-1.5 rounded-sm"
+              >
                 {t("blog_title")}
               </li>
             </Link>
 
             <Link href="#contact" onClick={() => setActiveId("#contact")}>
-              <li className="text-base text-black bg-(--prim) cursor-pointer font-semibold px-6 py-1.5 rounded-sm">
+              <li
+                onClick={() => setOpenMenu(!openMenu)}
+                className="text-base text-black bg-(--prim) cursor-pointer font-semibold px-6 py-1.5 rounded-sm"
+              >
                 {t("contact_title")}
               </li>
             </Link>
