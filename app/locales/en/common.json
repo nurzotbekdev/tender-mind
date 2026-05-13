@@ -159,5 +159,10 @@
   "register": "Register",
   "password": "Password",
   "already_have_account": "Already have an account?",
-  "no_account": "Don't have an account?"
+  "no_account": "Don't have an account?",
+  "tenders": "Tenders",
+  "document": "Document",
+  "all_tenders": "All tender announcements",
+  "documents_templates": "Documents and templates",
+  "strategic_plan": "Strategic plans and goals"
 }

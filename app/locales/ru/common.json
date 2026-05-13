@@ -159,5 +159,10 @@
   "register": "Регистрация",
   "password": "Пароль",
   "already_have_account": "Уже есть аккаунт?",
-  "no_account": "Нет аккаунта?"
+  "no_account": "Нет аккаунта?",
+  "tenders": "Тендеры",
+  "document": "Документ",
+  "all_tenders": "Все тендерные объявления",
+  "documents_templates": "Документы и шаблоны",
+  "strategic_plan": "Стратегический план и цели"
 }

@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import { Play } from "lucide-react";
 
@@ -33,14 +34,18 @@ function Hero() {
         </p>
 
         <div className="flex items-center gap-5 mt-5 lg:mt-3">
-          <button className="bg-(--prim) px-4 py-2 rounded-lg text-base sm:text-lg font-medium hover:shadow-[0_0_15px_#b6ff3b] transition-all duration-300 cursor-pointer Inter btn overflow-hidden ease-[cubic-bezier(0.02,0.01,0.47,1)] z-0 relative">
-            {t("try_for_free")}
-          </button>
+          <Link href="/UI/Workspace">
+            <button className="bg-(--prim) px-4 py-2 rounded-lg text-base sm:text-lg font-medium hover:shadow-[0_0_15px_#b6ff3b] transition-all duration-300 cursor-pointer Inter btn overflow-hidden ease-[cubic-bezier(0.02,0.01,0.47,1)] z-0 relative">
+              {t("try_for_free")}
+            </button>
+          </Link>
 
-          <button className="btn overflow-hidden ease-[cubic-bezier(0.02,0.01,0.47,1)] z-0 bg-black border border-gray-600 hover:border-lime-400 text-white px-4 py-2 rounded-lg text-base sm:text-lg font-medium transition-all duration-300 cursor-pointer flex items-center gap-2 Inter relative">
-            <Play className="sm:w-5 sm:h-5 w-4 h-4" />
-            {t("how_it_works")}
-          </button>
+          <Link href="#how_it_work">
+            <button className="btn overflow-hidden ease-[cubic-bezier(0.02,0.01,0.47,1)] z-0 bg-black border border-gray-600 hover:border-lime-400 text-white px-4 py-2 rounded-lg text-base sm:text-lg font-medium transition-all duration-300 cursor-pointer flex items-center gap-2 Inter relative">
+              <Play className="sm:w-5 sm:h-5 w-4 h-4" />
+              {t("how_it_works")}
+            </button>
+          </Link>
         </div>
 
         <div className="flex items-center gap-2 mt-8 lg:mt-4 sm:flex-row flex-col">
