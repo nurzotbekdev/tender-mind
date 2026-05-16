@@ -1,0 +1,1092 @@
+{
+    "page1": [
+        {
+            "id": 1,
+            "soha": "IT",
+            "border_color": "#2E3A59",
+            "bg_color": "#1A2233",
+            "tag_color": "#3B82F6",
+            "loyiha_nomi": "Toshkent shahar davlat idoralarini IT infratuzilmasini modernizatsiyalash",
+            "byudjet": "4 200 000 000 so'm",
+            "muddat": 13,
+            "yangimi": false,
+            "raqiblar_soni": 3,
+            "galaba_ehtimoli": 87,
+            "teglari": [
+                "Tarmoq",
+                "Server",
+                "Bulut"
+            ]
+        },
+        {
+            "id": 2,
+            "soha": "QURILISH",
+            "border_color": "#8C6728",
+            "bg_color": "#3A2B1F",
+            "tag_color": "#F5A623",
+            "loyiha_nomi": "Buxoro shahrini obodonlashtirish — markaziy maydon rekonstruksiyasi",
+            "byudjet": "3 200 000 000 so'm",
+            "muddat": 10,
+            "yangimi": true,
+            "raqiblar_soni": 3,
+            "galaba_ehtimoli": 79,
+            "teglari": [
+                "Obodon",
+                "Landshaft",
+                "Meros"
+            ]
+        },
+        {
+            "id": 3,
+            "soha": "TIBBIYOT",
+            "border_color": "#592E3A",
+            "bg_color": "#331A22",
+            "tag_color": "#EF4444",
+            "loyiha_nomi": "Respublika shoshilinch tibbiy yordam markazi uchun reanimatsiya jihozlari",
+            "byudjet": "4 500 000 000 so'm",
+            "muddat": -23,
+            "yangimi": false,
+            "raqiblar_soni": 5,
+            "galaba_ehtimoli": 76,
+            "teglari": [
+                "Reanimatsiya",
+                "Ventilatsiya",
+                "Monitoring"
+            ]
+        },
+        {
+            "id": 4,
+            "soha": "OZIQ-OVQAT",
+            "border_color": "#0D7441",
+            "bg_color": "#13352C",
+            "tag_color": "#01E57A",
+            "loyiha_nomi": "Farg'ona viloyati maktablari uchun ovqatlanish xizmatini ko'rsatish",
+            "byudjet": "890 000 000 so'm",
+            "muddat": -25,
+            "yangimi": false,
+            "raqiblar_soni": 2,
+            "galaba_ehtimoli": 88,
+            "teglari": [
+                "Maktab",
+                "Ovqat",
+                "HACCP"
+            ]
+        },
+        {
+            "id": 5,
+            "soha": "TRANSPORT",
+            "border_color": "#5E7412",
+            "bg_color": "#31391A",
+            "tag_color": "#C8FF00",
+            "loyiha_nomi": "Toshkent shahri elektr avtobuslar parki shakllantirish",
+            "byudjet": "18 500 000 000 so'm",
+            "muddat": 17,
+            "yangimi": false,
+            "raqiblar_soni": 11,
+            "galaba_ehtimoli": 47,
+            "teglari": [
+                "Elektr",
+                "EV Bus",
+                "Charging"
+            ]
+        },
+        {
+            "id": 6,
+            "soha": "TA'LIM",
+            "border_color": "#553E93",
+            "bg_color": "#221F35",
+            "tag_color": "#9B7BFF",
+            "loyiha_nomi": "Namangan IT Park — dasturlash o'quv markazi jihozlash",
+            "byudjet": "750 000 000 so'm",
+            "muddat": -10,
+            "yangimi": false,
+            "raqiblar_soni": 3,
+            "galaba_ehtimoli": 84,
+            "teglari": [
+                "IT Park",
+                "Server",
+                "Mac"
+            ]
+        },
+        {
+            "id": 7,
+            "soha": "EKOLOGIYA",
+            "border_color": "#00A86B",
+            "bg_color": "#0D2B22",
+            "tag_color": "#00E091",
+            "loyiha_nomi": "Toshkent shahar chiqindilarni qayta ishlash zavodi",
+            "byudjet": "35 000 000 000 so'm",
+            "muddat": 17,
+            "yangimi": false,
+            "raqiblar_soni": 18,
+            "galaba_ehtimoli": 32,
+            "teglari": [
+                "Recycling",
+                "Zavod",
+                "Ekologiya"
+            ]
+        },
+        {
+            "id": 8,
+            "soha": "QISHLOQ XO'JALIGI",
+            "border_color": "#4B631A",
+            "bg_color": "#222C18",
+            "tag_color": "#8DCC2A",
+            "loyiha_nomi": "Xorazm viloyati dehqonchilik uchun smart agro texnologiyalari",
+            "byudjet": "1 600 000 000 so'm",
+            "muddat": 0,
+            "yangimi": false,
+            "raqiblar_soni": 4,
+            "galaba_ehtimoli": 73,
+            "teglari": [
+                "Smart Agro",
+                "Drone",
+                "IoT"
+            ]
+        },
+        {
+            "id": 9,
+            "soha": "EKOLOGIYA",
+            "border_color": "#00A86B",
+            "bg_color": "#0D2B22",
+            "tag_color": "#00E091",
+            "loyiha_nomi": "Buxoro viloyati quyosh energiyasi stantsiyasi (50 MVt)",
+            "byudjet": "42 000 000 000 so'm",
+            "muddat": 10,
+            "yangimi": false,
+            "raqiblar_soni": 20,
+            "galaba_ehtimoli": 28,
+            "teglari": [
+                "Quyosh",
+                "Solar",
+                "Energiya"
+            ]
+        },
+        {
+            "id": 10,
+            "soha": "TRANSPORT",
+            "border_color": "#5E7412",
+            "bg_color": "#31391A",
+            "tag_color": "#C8FF00",
+            "loyiha_nomi": "Qashqadaryo viloyati shaharlararo avtobus xizmati konsessiyasi",
+            "byudjet": "22 000 000 000 so'm",
+            "muddat": -17,
+            "yangimi": false,
+            "raqiblar_soni": 13,
+            "galaba_ehtimoli": 41,
+            "teglari": [
+                "Yo'l",
+                "Aeroport",
+                "4-yo'l"
+            ]
+        },
+        {
+            "id": 11,
+            "soha": "QURILISH",
+            "border_color": "#8C6728",
+            "bg_color": "#3A2B1F",
+            "tag_color": "#F5A623",
+            "loyiha_nomi": "Namangan viloyati qishloq xo'jaligi irrigatsiya tizimi",
+            "byudjet": "5 100 000 000 so'm",
+            "muddat": -27,
+            "yangimi": false,
+            "raqiblar_soni": 5,
+            "galaba_ehtimoli": 71,
+            "teglari": [
+                "Irrigatsiya",
+                "Kanal",
+                "Suv"
+            ]
+        },
+        {
+            "id": 12,
+            "soha": "IT",
+            "border_color": "#2E3A59",
+            "bg_color": "#1A2233",
+            "tag_color": "#3B82F6",
+            "loyiha_nomi": "Andijon viloyati tibbiyot axborot tizimini modernizatsiyalash (MIS)",
+            "byudjet": "1 800 000 000 so'm",
+            "muddat": 26,
+            "yangimi": true,
+            "raqiblar_soni": 4,
+            "galaba_ehtimoli": 79,
+            "teglari": [
+                "MIS",
+                "EMR",
+                "HL7"
+            ]
+        }
+    ],
+    "page2": [
+        {
+            "id": 1,
+            "soha": "EKOLOGIYA",
+            "border_color": "#00A86B",
+            "bg_color": "#0D2B22",
+            "tag_color": "#00E091",
+            "loyiha_nomi": "Toshkent shahar chiqindilarni qayta ishlash zavodi",
+            "byudjet": "35 000 000 000 so'm",
+            "muddat": 17,
+            "yangimi": false,
+            "raqiblar_soni": 18,
+            "galaba_ehtimoli": 32,
+            "teglari": [
+                "Recycling",
+                "Zavod",
+                "Ekologiya"
+            ]
+        },
+        {
+            "id": 2,
+            "soha": "QISHLOQ XO'JALIGI",
+            "border_color": "#4B631A",
+            "bg_color": "#222C18",
+            "tag_color": "#8DCC2A",
+            "loyiha_nomi": "Xorazm viloyati dehqonchilik uchun smart agro texnologiyalari",
+            "byudjet": "1 600 000 000 so'm",
+            "muddat": 0,
+            "yangimi": false,
+            "raqiblar_soni": 4,
+            "galaba_ehtimoli": 73,
+            "teglari": [
+                "Smart Agro",
+                "Drone",
+                "IoT"
+            ]
+        },
+        {
+            "id": 3,
+            "soha": "EKOLOGIYA",
+            "border_color": "#00A86B",
+            "bg_color": "#0D2B22",
+            "tag_color": "#00E091",
+            "loyiha_nomi": "Buxoro viloyati quyosh energiyasi stantsiyasi (50 MVt)",
+            "byudjet": "42 000 000 000 so'm",
+            "muddat": 10,
+            "yangimi": false,
+            "raqiblar_soni": 20,
+            "galaba_ehtimoli": 28,
+            "teglari": [
+                "Quyosh",
+                "Solar",
+                "Energiya"
+            ]
+        },
+        {
+            "id": 4,
+            "soha": "TRANSPORT",
+            "border_color": "#5E7412",
+            "bg_color": "#31391A",
+            "tag_color": "#C8FF00",
+            "loyiha_nomi": "Qashqadaryo viloyati shaharlararo avtobus xizmati konsessiyasi",
+            "byudjet": "22 000 000 000 so'm",
+            "muddat": -17,
+            "yangimi": false,
+            "raqiblar_soni": 13,
+            "galaba_ehtimoli": 41,
+            "teglari": [
+                "Yo'l",
+                "Aeroport",
+                "4-yo'l"
+            ]
+        },
+        {
+            "id": 5,
+            "soha": "QURILISH",
+            "border_color": "#8C6728",
+            "bg_color": "#3A2B1F",
+            "tag_color": "#F5A623",
+            "loyiha_nomi": "Namangan viloyati qishloq xo'jaligi irrigatsiya tizimi",
+            "byudjet": "5 100 000 000 so'm",
+            "muddat": -27,
+            "yangimi": false,
+            "raqiblar_soni": 5,
+            "galaba_ehtimoli": 71,
+            "teglari": [
+                "Irrigatsiya",
+                "Kanal",
+                "Suv"
+            ]
+        },
+        {
+            "id": 6,
+            "soha": "IT",
+            "border_color": "#2E3A59",
+            "bg_color": "#1A2233",
+            "tag_color": "#3B82F6",
+            "loyiha_nomi": "Andijon viloyati tibbiyot axborot tizimini modernizatsiyalash (MIS)",
+            "byudjet": "1 800 000 000 so'm",
+            "muddat": 26,
+            "yangimi": true,
+            "raqiblar_soni": 4,
+            "galaba_ehtimoli": 79,
+            "teglari": [
+                "MIS",
+                "EMR",
+                "HL7"
+            ]
+        },
+        {
+            "id": 7,
+            "soha": "IT",
+            "border_color": "#2E3A59",
+            "bg_color": "#1A2233",
+            "tag_color": "#3B82F6",
+            "loyiha_nomi": "Toshkent shahar davlat idoralarini IT infratuzilmasini modernizatsiyalash",
+            "byudjet": "4 200 000 000 so'm",
+            "muddat": 13,
+            "yangimi": false,
+            "raqiblar_soni": 3,
+            "galaba_ehtimoli": 87,
+            "teglari": [
+                "Tarmoq",
+                "Server",
+                "Bulut"
+            ]
+        },
+        {
+            "id": 8,
+            "soha": "QURILISH",
+            "border_color": "#8C6728",
+            "bg_color": "#3A2B1F",
+            "tag_color": "#F5A623",
+            "loyiha_nomi": "Buxoro shahrini obodonlashtirish — markaziy maydon rekonstruksiyasi",
+            "byudjet": "3 200 000 000 so'm",
+            "muddat": 10,
+            "yangimi": true,
+            "raqiblar_soni": 3,
+            "galaba_ehtimoli": 79,
+            "teglari": [
+                "Obodon",
+                "Landshaft",
+                "Meros"
+            ]
+        },
+        {
+            "id": 9,
+            "soha": "TIBBIYOT",
+            "border_color": "#592E3A",
+            "bg_color": "#331A22",
+            "tag_color": "#EF4444",
+            "loyiha_nomi": "Respublika shoshilinch tibbiy yordam markazi uchun reanimatsiya jihozlari",
+            "byudjet": "4 500 000 000 so'm",
+            "muddat": -23,
+            "yangimi": false,
+            "raqiblar_soni": 5,
+            "galaba_ehtimoli": 76,
+            "teglari": [
+                "Reanimatsiya",
+                "Ventilatsiya",
+                "Monitoring"
+            ]
+        },
+        {
+            "id": 10,
+            "soha": "OZIQ-OVQAT",
+            "border_color": "#0D7441",
+            "bg_color": "#13352C",
+            "tag_color": "#01E57A",
+            "loyiha_nomi": "Farg'ona viloyati maktablari uchun ovqatlanish xizmatini ko'rsatish",
+            "byudjet": "890 000 000 so'm",
+            "muddat": -25,
+            "yangimi": false,
+            "raqiblar_soni": 2,
+            "galaba_ehtimoli": 88,
+            "teglari": [
+                "Maktab",
+                "Ovqat",
+                "HACCP"
+            ]
+        },
+        {
+            "id": 11,
+            "soha": "TRANSPORT",
+            "border_color": "#5E7412",
+            "bg_color": "#31391A",
+            "tag_color": "#C8FF00",
+            "loyiha_nomi": "Toshkent shahri elektr avtobuslar parki shakllantirish",
+            "byudjet": "18 500 000 000 so'm",
+            "muddat": 17,
+            "yangimi": false,
+            "raqiblar_soni": 11,
+            "galaba_ehtimoli": 47,
+            "teglari": [
+                "Elektr",
+                "EV Bus",
+                "Charging"
+            ]
+        },
+        {
+            "id": 12,
+            "soha": "TA'LIM",
+            "border_color": "#553E93",
+            "bg_color": "#221F35",
+            "tag_color": "#9B7BFF",
+            "loyiha_nomi": "Namangan IT Park — dasturlash o'quv markazi jihozlash",
+            "byudjet": "750 000 000 so'm",
+            "muddat": -10,
+            "yangimi": false,
+            "raqiblar_soni": 3,
+            "galaba_ehtimoli": 84,
+            "teglari": [
+                "IT Park",
+                "Server",
+                "Mac"
+            ]
+        }
+    ],
+    "page3": [
+        {
+            "id": 1,
+            "soha": "IT",
+            "border_color": "#2E3A59",
+            "bg_color": "#1A2233",
+            "tag_color": "#3B82F6",
+            "loyiha_nomi": "Toshkent shahar davlat idoralarini IT infratuzilmasini modernizatsiyalash",
+            "byudjet": "4 200 000 000 so'm",
+            "muddat": 13,
+            "yangimi": false,
+            "raqiblar_soni": 3,
+            "galaba_ehtimoli": 87,
+            "teglari": [
+                "Tarmoq",
+                "Server",
+                "Bulut"
+            ]
+        },
+        {
+            "id": 2,
+            "soha": "QURILISH",
+            "border_color": "#8C6728",
+            "bg_color": "#3A2B1F",
+            "tag_color": "#F5A623",
+            "loyiha_nomi": "Buxoro shahrini obodonlashtirish — markaziy maydon rekonstruksiyasi",
+            "byudjet": "3 200 000 000 so'm",
+            "muddat": 10,
+            "yangimi": true,
+            "raqiblar_soni": 3,
+            "galaba_ehtimoli": 79,
+            "teglari": [
+                "Obodon",
+                "Landshaft",
+                "Meros"
+            ]
+        },
+        {
+            "id": 3,
+            "soha": "TIBBIYOT",
+            "border_color": "#592E3A",
+            "bg_color": "#331A22",
+            "tag_color": "#EF4444",
+            "loyiha_nomi": "Respublika shoshilinch tibbiy yordam markazi uchun reanimatsiya jihozlari",
+            "byudjet": "4 500 000 000 so'm",
+            "muddat": -23,
+            "yangimi": false,
+            "raqiblar_soni": 5,
+            "galaba_ehtimoli": 76,
+            "teglari": [
+                "Reanimatsiya",
+                "Ventilatsiya",
+                "Monitoring"
+            ]
+        },
+        {
+            "id": 4,
+            "soha": "OZIQ-OVQAT",
+            "border_color": "#0D7441",
+            "bg_color": "#13352C",
+            "tag_color": "#01E57A",
+            "loyiha_nomi": "Farg'ona viloyati maktablari uchun ovqatlanish xizmatini ko'rsatish",
+            "byudjet": "890 000 000 so'm",
+            "muddat": -25,
+            "yangimi": false,
+            "raqiblar_soni": 2,
+            "galaba_ehtimoli": 88,
+            "teglari": [
+                "Maktab",
+                "Ovqat",
+                "HACCP"
+            ]
+        },
+        {
+            "id": 5,
+            "soha": "TRANSPORT",
+            "border_color": "#5E7412",
+            "bg_color": "#31391A",
+            "tag_color": "#C8FF00",
+            "loyiha_nomi": "Toshkent shahri elektr avtobuslar parki shakllantirish",
+            "byudjet": "18 500 000 000 so'm",
+            "muddat": 17,
+            "yangimi": false,
+            "raqiblar_soni": 11,
+            "galaba_ehtimoli": 47,
+            "teglari": [
+                "Elektr",
+                "EV Bus",
+                "Charging"
+            ]
+        },
+        {
+            "id": 6,
+            "soha": "TA'LIM",
+            "border_color": "#553E93",
+            "bg_color": "#221F35",
+            "tag_color": "#9B7BFF",
+            "loyiha_nomi": "Namangan IT Park — dasturlash o'quv markazi jihozlash",
+            "byudjet": "750 000 000 so'm",
+            "muddat": -10,
+            "yangimi": false,
+            "raqiblar_soni": 3,
+            "galaba_ehtimoli": 84,
+            "teglari": [
+                "IT Park",
+                "Server",
+                "Mac"
+            ]
+        },
+        {
+            "id": 7,
+            "soha": "EKOLOGIYA",
+            "border_color": "#00A86B",
+            "bg_color": "#0D2B22",
+            "tag_color": "#00E091",
+            "loyiha_nomi": "Toshkent shahar chiqindilarni qayta ishlash zavodi",
+            "byudjet": "35 000 000 000 so'm",
+            "muddat": 17,
+            "yangimi": false,
+            "raqiblar_soni": 18,
+            "galaba_ehtimoli": 32,
+            "teglari": [
+                "Recycling",
+                "Zavod",
+                "Ekologiya"
+            ]
+        },
+        {
+            "id": 8,
+            "soha": "QISHLOQ XO'JALIGI",
+            "border_color": "#4B631A",
+            "bg_color": "#222C18",
+            "tag_color": "#8DCC2A",
+            "loyiha_nomi": "Xorazm viloyati dehqonchilik uchun smart agro texnologiyalari",
+            "byudjet": "1 600 000 000 so'm",
+            "muddat": 0,
+            "yangimi": false,
+            "raqiblar_soni": 4,
+            "galaba_ehtimoli": 73,
+            "teglari": [
+                "Smart Agro",
+                "Drone",
+                "IoT"
+            ]
+        },
+        {
+            "id": 9,
+            "soha": "EKOLOGIYA",
+            "border_color": "#00A86B",
+            "bg_color": "#0D2B22",
+            "tag_color": "#00E091",
+            "loyiha_nomi": "Buxoro viloyati quyosh energiyasi stantsiyasi (50 MVt)",
+            "byudjet": "42 000 000 000 so'm",
+            "muddat": 10,
+            "yangimi": false,
+            "raqiblar_soni": 20,
+            "galaba_ehtimoli": 28,
+            "teglari": [
+                "Quyosh",
+                "Solar",
+                "Energiya"
+            ]
+        },
+        {
+            "id": 10,
+            "soha": "TRANSPORT",
+            "border_color": "#5E7412",
+            "bg_color": "#31391A",
+            "tag_color": "#C8FF00",
+            "loyiha_nomi": "Qashqadaryo viloyati shaharlararo avtobus xizmati konsessiyasi",
+            "byudjet": "22 000 000 000 so'm",
+            "muddat": -17,
+            "yangimi": false,
+            "raqiblar_soni": 13,
+            "galaba_ehtimoli": 41,
+            "teglari": [
+                "Yo'l",
+                "Aeroport",
+                "4-yo'l"
+            ]
+        },
+        {
+            "id": 11,
+            "soha": "QURILISH",
+            "border_color": "#8C6728",
+            "bg_color": "#3A2B1F",
+            "tag_color": "#F5A623",
+            "loyiha_nomi": "Namangan viloyati qishloq xo'jaligi irrigatsiya tizimi",
+            "byudjet": "5 100 000 000 so'm",
+            "muddat": -27,
+            "yangimi": false,
+            "raqiblar_soni": 5,
+            "galaba_ehtimoli": 71,
+            "teglari": [
+                "Irrigatsiya",
+                "Kanal",
+                "Suv"
+            ]
+        },
+        {
+            "id": 12,
+            "soha": "IT",
+            "border_color": "#2E3A59",
+            "bg_color": "#1A2233",
+            "tag_color": "#3B82F6",
+            "loyiha_nomi": "Andijon viloyati tibbiyot axborot tizimini modernizatsiyalash (MIS)",
+            "byudjet": "1 800 000 000 so'm",
+            "muddat": 26,
+            "yangimi": true,
+            "raqiblar_soni": 4,
+            "galaba_ehtimoli": 79,
+            "teglari": [
+                "MIS",
+                "EMR",
+                "HL7"
+            ]
+        }
+    ],
+    "page4": [
+        {
+            "id": 1,
+            "soha": "EKOLOGIYA",
+            "border_color": "#00A86B",
+            "bg_color": "#0D2B22",
+            "tag_color": "#00E091",
+            "loyiha_nomi": "Toshkent shahar chiqindilarni qayta ishlash zavodi",
+            "byudjet": "35 000 000 000 so'm",
+            "muddat": 17,
+            "yangimi": false,
+            "raqiblar_soni": 18,
+            "galaba_ehtimoli": 32,
+            "teglari": [
+                "Recycling",
+                "Zavod",
+                "Ekologiya"
+            ]
+        },
+        {
+            "id": 2,
+            "soha": "QISHLOQ XO'JALIGI",
+            "border_color": "#4B631A",
+            "bg_color": "#222C18",
+            "tag_color": "#8DCC2A",
+            "loyiha_nomi": "Xorazm viloyati dehqonchilik uchun smart agro texnologiyalari",
+            "byudjet": "1 600 000 000 so'm",
+            "muddat": 0,
+            "yangimi": false,
+            "raqiblar_soni": 4,
+            "galaba_ehtimoli": 73,
+            "teglari": [
+                "Smart Agro",
+                "Drone",
+                "IoT"
+            ]
+        },
+        {
+            "id": 3,
+            "soha": "EKOLOGIYA",
+            "border_color": "#00A86B",
+            "bg_color": "#0D2B22",
+            "tag_color": "#00E091",
+            "loyiha_nomi": "Buxoro viloyati quyosh energiyasi stantsiyasi (50 MVt)",
+            "byudjet": "42 000 000 000 so'm",
+            "muddat": 10,
+            "yangimi": false,
+            "raqiblar_soni": 20,
+            "galaba_ehtimoli": 28,
+            "teglari": [
+                "Quyosh",
+                "Solar",
+                "Energiya"
+            ]
+        },
+        {
+            "id": 4,
+            "soha": "IT",
+            "border_color": "#2E3A59",
+            "bg_color": "#1A2233",
+            "tag_color": "#3B82F6",
+            "loyiha_nomi": "Andijon viloyati tibbiyot axborot tizimini modernizatsiyalash (MIS)",
+            "byudjet": "1 800 000 000 so'm",
+            "muddat": 26,
+            "yangimi": true,
+            "raqiblar_soni": 4,
+            "galaba_ehtimoli": 79,
+            "teglari": [
+                "MIS",
+                "EMR",
+                "HL7"
+            ]
+        },
+        {
+            "id": 5,
+            "soha": "QURILISH",
+            "border_color": "#8C6728",
+            "bg_color": "#3A2B1F",
+            "tag_color": "#F5A623",
+            "loyiha_nomi": "Buxoro shahrini obodonlashtirish — markaziy maydon rekonstruksiyasi",
+            "byudjet": "3 200 000 000 so'm",
+            "muddat": 10,
+            "yangimi": true,
+            "raqiblar_soni": 3,
+            "galaba_ehtimoli": 79,
+            "teglari": [
+                "Obodon",
+                "Landshaft",
+                "Meros"
+            ]
+        },
+        {
+            "id": 6,
+            "soha": "TIBBIYOT",
+            "border_color": "#592E3A",
+            "bg_color": "#331A22",
+            "tag_color": "#EF4444",
+            "loyiha_nomi": "Respublika shoshilinch tibbiy yordam markazi uchun reanimatsiya jihozlari",
+            "byudjet": "4 500 000 000 so'm",
+            "muddat": -23,
+            "yangimi": false,
+            "raqiblar_soni": 5,
+            "galaba_ehtimoli": 76,
+            "teglari": [
+                "Reanimatsiya",
+                "Ventilatsiya",
+                "Monitoring"
+            ]
+        },
+        {
+            "id": 7,
+            "soha": "OZIQ-OVQAT",
+            "border_color": "#0D7441",
+            "bg_color": "#13352C",
+            "tag_color": "#01E57A",
+            "loyiha_nomi": "Farg'ona viloyati maktablari uchun ovqatlanish xizmatini ko'rsatish",
+            "byudjet": "890 000 000 so'm",
+            "muddat": -25,
+            "yangimi": false,
+            "raqiblar_soni": 2,
+            "galaba_ehtimoli": 88,
+            "teglari": [
+                "Maktab",
+                "Ovqat",
+                "HACCP"
+            ]
+        },
+        {
+            "id": 8,
+            "soha": "TRANSPORT",
+            "border_color": "#5E7412",
+            "bg_color": "#31391A",
+            "tag_color": "#C8FF00",
+            "loyiha_nomi": "Toshkent shahri elektr avtobuslar parki shakllantirish",
+            "byudjet": "18 500 000 000 so'm",
+            "muddat": 17,
+            "yangimi": false,
+            "raqiblar_soni": 11,
+            "galaba_ehtimoli": 47,
+            "teglari": [
+                "Elektr",
+                "EV Bus",
+                "Charging"
+            ]
+        },
+        {
+            "id": 9,
+            "soha": "TA'LIM",
+            "border_color": "#553E93",
+            "bg_color": "#221F35",
+            "tag_color": "#9B7BFF",
+            "loyiha_nomi": "Namangan IT Park — dasturlash o'quv markazi jihozlash",
+            "byudjet": "750 000 000 so'm",
+            "muddat": -10,
+            "yangimi": false,
+            "raqiblar_soni": 3,
+            "galaba_ehtimoli": 84,
+            "teglari": [
+                "IT Park",
+                "Server",
+                "Mac"
+            ]
+        },
+        {
+            "id": 10,
+            "soha": "TRANSPORT",
+            "border_color": "#5E7412",
+            "bg_color": "#31391A",
+            "tag_color": "#C8FF00",
+            "loyiha_nomi": "Qashqadaryo viloyati shaharlararo avtobus xizmati konsessiyasi",
+            "byudjet": "22 000 000 000 so'm",
+            "muddat": -17,
+            "yangimi": false,
+            "raqiblar_soni": 13,
+            "galaba_ehtimoli": 41,
+            "teglari": [
+                "Yo'l",
+                "Aeroport",
+                "4-yo'l"
+            ]
+        },
+        {
+            "id": 11,
+            "soha": "QURILISH",
+            "border_color": "#8C6728",
+            "bg_color": "#3A2B1F",
+            "tag_color": "#F5A623",
+            "loyiha_nomi": "Namangan viloyati qishloq xo'jaligi irrigatsiya tizimi",
+            "byudjet": "5 100 000 000 so'm",
+            "muddat": -27,
+            "yangimi": false,
+            "raqiblar_soni": 5,
+            "galaba_ehtimoli": 71,
+            "teglari": [
+                "Irrigatsiya",
+                "Kanal",
+                "Suv"
+            ]
+        },
+        {
+            "id": 12,
+            "soha": "IT",
+            "border_color": "#2E3A59",
+            "bg_color": "#1A2233",
+            "tag_color": "#3B82F6",
+            "loyiha_nomi": "Toshkent shahar davlat idoralarini IT infratuzilmasini modernizatsiyalash",
+            "byudjet": "4 200 000 000 so'm",
+            "muddat": 13,
+            "yangimi": false,
+            "raqiblar_soni": 3,
+            "galaba_ehtimoli": 87,
+            "teglari": [
+                "Tarmoq",
+                "Server",
+                "Bulut"
+            ]
+        }
+    ],
+    "page5": [
+        {
+            "id": 1,
+            "soha": "IT",
+            "border_color": "#2E3A59",
+            "bg_color": "#1A2233",
+            "tag_color": "#3B82F6",
+            "loyiha_nomi": "Andijon viloyati tibbiyot axborot tizimini modernizatsiyalash (MIS)",
+            "byudjet": "1 800 000 000 so'm",
+            "muddat": 26,
+            "yangimi": true,
+            "raqiblar_soni": 4,
+            "galaba_ehtimoli": 79,
+            "teglari": [
+                "MIS",
+                "EMR",
+                "HL7"
+            ]
+        },
+        {
+            "id": 2,
+            "soha": "QURILISH",
+            "border_color": "#8C6728",
+            "bg_color": "#3A2B1F",
+            "tag_color": "#F5A623",
+            "loyiha_nomi": "Buxoro shahrini obodonlashtirish — markaziy maydon rekonstruksiyasi",
+            "byudjet": "3 200 000 000 so'm",
+            "muddat": 10,
+            "yangimi": true,
+            "raqiblar_soni": 3,
+            "galaba_ehtimoli": 79,
+            "teglari": [
+                "Obodon",
+                "Landshaft",
+                "Meros"
+            ]
+        },
+        {
+            "id": 3,
+            "soha": "TIBBIYOT",
+            "border_color": "#592E3A",
+            "bg_color": "#331A22",
+            "tag_color": "#EF4444",
+            "loyiha_nomi": "Respublika shoshilinch tibbiy yordam markazi uchun reanimatsiya jihozlari",
+            "byudjet": "4 500 000 000 so'm",
+            "muddat": -23,
+            "yangimi": false,
+            "raqiblar_soni": 5,
+            "galaba_ehtimoli": 76,
+            "teglari": [
+                "Reanimatsiya",
+                "Ventilatsiya",
+                "Monitoring"
+            ]
+        },
+        {
+            "id": 4,
+            "soha": "OZIQ-OVQAT",
+            "border_color": "#0D7441",
+            "bg_color": "#13352C",
+            "tag_color": "#01E57A",
+            "loyiha_nomi": "Farg'ona viloyati maktablari uchun ovqatlanish xizmatini ko'rsatish",
+            "byudjet": "890 000 000 so'm",
+            "muddat": -25,
+            "yangimi": false,
+            "raqiblar_soni": 2,
+            "galaba_ehtimoli": 88,
+            "teglari": [
+                "Maktab",
+                "Ovqat",
+                "HACCP"
+            ]
+        },
+        {
+            "id": 5,
+            "soha": "TRANSPORT",
+            "border_color": "#5E7412",
+            "bg_color": "#31391A",
+            "tag_color": "#C8FF00",
+            "loyiha_nomi": "Toshkent shahri elektr avtobuslar parki shakllantirish",
+            "byudjet": "18 500 000 000 so'm",
+            "muddat": 17,
+            "yangimi": false,
+            "raqiblar_soni": 11,
+            "galaba_ehtimoli": 47,
+            "teglari": [
+                "Elektr",
+                "EV Bus",
+                "Charging"
+            ]
+        },
+        {
+            "id": 6,
+            "soha": "TA'LIM",
+            "border_color": "#553E93",
+            "bg_color": "#221F35",
+            "tag_color": "#9B7BFF",
+            "loyiha_nomi": "Namangan IT Park — dasturlash o'quv markazi jihozlash",
+            "byudjet": "750 000 000 so'm",
+            "muddat": -10,
+            "yangimi": false,
+            "raqiblar_soni": 3,
+            "galaba_ehtimoli": 84,
+            "teglari": [
+                "IT Park",
+                "Server",
+                "Mac"
+            ]
+        },
+        {
+            "id": 7,
+            "soha": "EKOLOGIYA",
+            "border_color": "#00A86B",
+            "bg_color": "#0D2B22",
+            "tag_color": "#00E091",
+            "loyiha_nomi": "Toshkent shahar chiqindilarni qayta ishlash zavodi",
+            "byudjet": "35 000 000 000 so'm",
+            "muddat": 17,
+            "yangimi": false,
+            "raqiblar_soni": 18,
+            "galaba_ehtimoli": 32,
+            "teglari": [
+                "Recycling",
+                "Zavod",
+                "Ekologiya"
+            ]
+        },
+        {
+            "id": 8,
+            "soha": "QISHLOQ XO'JALIGI",
+            "border_color": "#4B631A",
+            "bg_color": "#222C18",
+            "tag_color": "#8DCC2A",
+            "loyiha_nomi": "Xorazm viloyati dehqonchilik uchun smart agro texnologiyalari",
+            "byudjet": "1 600 000 000 so'm",
+            "muddat": 0,
+            "yangimi": false,
+            "raqiblar_soni": 4,
+            "galaba_ehtimoli": 73,
+            "teglari": [
+                "Smart Agro",
+                "Drone",
+                "IoT"
+            ]
+        },
+        {
+            "id": 9,
+            "soha": "EKOLOGIYA",
+            "border_color": "#00A86B",
+            "bg_color": "#0D2B22",
+            "tag_color": "#00E091",
+            "loyiha_nomi": "Buxoro viloyati quyosh energiyasi stantsiyasi (50 MVt)",
+            "byudjet": "42 000 000 000 so'm",
+            "muddat": 10,
+            "yangimi": false,
+            "raqiblar_soni": 20,
+            "galaba_ehtimoli": 28,
+            "teglari": [
+                "Quyosh",
+                "Solar",
+                "Energiya"
+            ]
+        },
+        {
+            "id": 10,
+            "soha": "TRANSPORT",
+            "border_color": "#5E7412",
+            "bg_color": "#31391A",
+            "tag_color": "#C8FF00",
+            "loyiha_nomi": "Qashqadaryo viloyati shaharlararo avtobus xizmati konsessiyasi",
+            "byudjet": "22 000 000 000 so'm",
+            "muddat": -17,
+            "yangimi": false,
+            "raqiblar_soni": 13,
+            "galaba_ehtimoli": 41,
+            "teglari": [
+                "Yo'l",
+                "Aeroport",
+                "4-yo'l"
+            ]
+        },
+        {
+            "id": 11,
+            "soha": "QURILISH",
+            "border_color": "#8C6728",
+            "bg_color": "#3A2B1F",
+            "tag_color": "#F5A623",
+            "loyiha_nomi": "Namangan viloyati qishloq xo'jaligi irrigatsiya tizimi",
+            "byudjet": "5 100 000 000 so'm",
+            "muddat": -27,
+            "yangimi": false,
+            "raqiblar_soni": 5,
+            "galaba_ehtimoli": 71,
+            "teglari": [
+                "Irrigatsiya",
+                "Kanal",
+                "Suv"
+            ]
+        },
+        {
+            "id": 12,
+            "soha": "IT",
+            "border_color": "#2E3A59",
+            "bg_color": "#1A2233",
+            "tag_color": "#3B82F6",
+            "loyiha_nomi": "Toshkent shahar davlat idoralarini IT infratuzilmasini modernizatsiyalash",
+            "byudjet": "4 200 000 000 so'm",
+            "muddat": 13,
+            "yangimi": false,
+            "raqiblar_soni": 3,
+            "galaba_ehtimoli": 87,
+            "teglari": [
+                "Tarmoq",
+                "Server",
+                "Bulut"
+            ]
+        }
+    ]
+}

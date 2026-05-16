@@ -22,7 +22,7 @@ function Workspace() {
               className={`w-full flex justify-center py-4 border-b cursor-pointer transition-all duration-300
                 ${
                   active === "tender"
-                    ? "border-lime-400 bg-[#151A2E]"
+                    ? "border-(--prim) bg-[#151A2E]"
                     : "border-[#2A3555] border-b"
                 }`}
             >
@@ -53,7 +53,7 @@ function Workspace() {
               className={`w-full flex justify-center py-4 border-b cursor-pointer transition-all duration-300
                 ${
                   active === "document"
-                    ? "border-lime-400 bg-[#151A2E]"
+                    ? "border-(--prim) bg-[#151A2E]"
                     : "border-[#2A3555] border-b"
                 }`}
             >
@@ -86,7 +86,7 @@ function Workspace() {
               className={`w-full flex justify-center py-4 border-b cursor-pointer transition-all duration-300
                 ${
                   active === "strategy"
-                    ? "border-lime-400 bg-[#151A2E]"
+                    ? "border-(--prim) bg-[#151A2E]"
                     : "border-[#2A3555] border-b"
                 }`}
             >
@@ -117,7 +117,6 @@ function Workspace() {
           {active === "document" && <Document />}
 
           {active === "strategy" && <Strategy />}
-          <div className="h-150"></div>
         </div>
 
         <div className="h-50"></div>
