@@ -11,22 +11,49 @@ import {
   CalendarClock,
   ChevronLeft,
   ChevronRight,
+  X,
+  Landmark,
+  ShieldCheck,
+  FileCheck,
+  ClipboardCheck,
+  Check,
+  Mail,
+  Phone,
+  FilePlus,
+  FileText,
+  Compass,
+  Target,
+  TrendingUp,
+  GitCompare,
+  Scale,
+  CheckCircle2,
 } from "lucide-react";
 
 import tenderData from "@/app/Json/Tender.json";
 
 function Tenders() {
   const [category, setCategory] = useState<string>("Barchasi");
-  const [currentPage, setCurrentPage] = useState(1);
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const [openCartIndex, setOpenCartIndex] = useState<null | number>(null);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  const toggle = (index: number): void => {
+    setOpenCartIndex(openCartIndex === index ? null : index);
+    setIsOpen(true);
+  };
 
   const currentTenders =
     tenderData[`page${currentPage}` as keyof typeof tenderData];
 
   const totalPages = Object.keys(tenderData).length;
 
+  const tenderDetails = currentTenders.find(
+    (item) => item.id === openCartIndex,
+  );
+
   return (
     <>
-      <div className="px-6 pt-8 pb-10">
+      <div className=" px-4 2xl:px-6 pt-8 pb-10">
         <div className="flex items-end gap-4 border border-[#2A3555] bg-black/25 px-6 py-3 rounded-xl w-full">
           {/*Soha  */}
           <div className="flex flex-col gap-2 flex-1">
@@ -83,11 +110,12 @@ function Tenders() {
           60 ta tender topildi
         </p>
 
-        <div className="grid grid-cols-3 gap-6 pt-4">
+        <div className="grid grid-cols-3 gap-3 2xl:gap-6 pt-4">
           {currentTenders.map((tender) => (
             <div
+              onClick={() => toggle(tender.id)}
               key={tender.id}
-              className="bg-black/25 border border-[#2A3555] rounded-2xl flex flex-col p-6 cursor-pointer hover:shadow-xs hover:shadow-gray-900 transition-all duration-500 hover:-translate-y-1 transform-gpu will-change-transform"
+              className="bg-black/25 border border-[#2A3555] rounded-2xl flex flex-col p-6 cursor-pointer hover:shadow-xs hover:shadow-gray-900 transition-all duration-500 hover:-translate-y-0.5 transform-gpu will-change-transform"
               style={{
                 backfaceVisibility: "hidden",
               }}
@@ -122,7 +150,7 @@ function Tenders() {
                 </div>
               </div>
 
-              <h1 className="pt-4 text-lg text-white font-semibold Inter">
+              <h1 className="pt-4 text-base 2xl:text-lg text-white font-semibold Inter">
                 {tender.loyiha_nomi}
               </h1>
 
@@ -184,7 +212,7 @@ function Tenders() {
                   {tender.teglari.map((tag, index) => (
                     <div
                       key={index}
-                      className="border border-gray-800 bg-[#0B0F1A] px-2 py-1 text-xs rounded text-gray-500"
+                      className="border border-gray-800 bg-[#0B0F1A] px-1 py-0.5 text-xs rounded text-gray-500"
                     >
                       {tag}
                     </div>
@@ -192,12 +220,12 @@ function Tenders() {
                 </div>
 
                 <div className="flex items-center gap-1">
-                  <div className="px-1.5 py-1 rounded border border-gray-800 bg-[#0B0F1A]">
+                  <div className="px-1 py-0.5 rounded border border-gray-800 bg-[#0B0F1A]">
                     <Medal className="text-yellow-500 fill-yellow-500/10 w-4.5 h-4.5" />
                   </div>
 
-                  <div className="px-1.5 py-1 rounded border border-gray-800 bg-[#0B0F1A]">
-                    <Tag className="text-yellow-500 fill-yellow-500/10 w-4.5 h-4.5" />
+                  <div className="px-1 py-0.5 rounded border border-gray-800 bg-[#0B0F1A]">
+                    <Tag className="text-yellow-500 fill-yellow-500/10 w-4.5 h-4.5 rotate-90" />
                   </div>
                 </div>
               </div>
@@ -255,6 +283,174 @@ function Tenders() {
           </div>
         )}
       </div>
+
+      {isOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center">
+          <div
+            className="absolute inset-0 bg-black/30 backdrop-blur-xs"
+            onClick={() => setIsOpen(false)}
+          />
+          <div className="relative w-[90%] max-w-3xl bg-[#0B0F1A] border border-[#2A3555] rounded-xl shadow-2xl">
+            <div className="p-6 border-b border-[#2A3555]">
+              <div className="flex items-center justify-between">
+                <span
+                  className={`border px-3 py-0.5 text-sm uppercase rounded-full`}
+                  style={{
+                    borderColor: tenderDetails?.border_color,
+                    backgroundColor: tenderDetails?.bg_color,
+                    color: tenderDetails?.tag_color,
+                  }}
+                >
+                  {tenderDetails?.soha}
+                </span>
+
+                <div className="flex items-center gap-3 ">
+                  <button className="bg-black/25 h-9 border border-gray-700 px-4 flex items-center gap-2 rounded-lg text-gray-300 cursor-pointer hover:border-(--prim) hover:text-(--prim) transition-all duration-300">
+                    <Tag className="text-yellow-500 fill-yellow-500/10 w-4.5 h-4.5 rotate-90" />
+                    Saqlash
+                  </button>
+
+                  <button
+                    onClick={() => setIsOpen(false)}
+                    className="bg-gray-800 rounded-md h-8 w-8 flex items-center justify-center hover:border-red-500 border border-transparent transition-all duration-300 cursor-pointer"
+                  >
+                    <X className="text-gray-300 w-5 h-5" />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-6">
+              <h1 className="text-xl text-white font-semibold">
+                {tenderDetails?.loyiha_nomi}
+              </h1>
+
+              <div className="flex items-center gap-2 py-2">
+                <Landmark className="text-gray-500 w-4 h-4" />
+                <p className="text-gray-300 text-sm">
+                  {tenderDetails?.buyurtmachi}
+                </p>
+              </div>
+
+              <div className="flex items-center gap-2 py-6">
+                <div className="bg-black/25 border border-[#2A3555] rounded-lg py-4 px-3 flex-2">
+                  <span className="text-xs uppercase text-gray-500">
+                    Byudjet
+                  </span>
+                  <h2 className="text-[16px] text-lime-500 font-semibold">
+                    {tenderDetails?.byudjet}
+                  </h2>
+                </div>
+
+                <div className="bg-black/25 border border-[#2A3555] rounded-lg py-4 px-3 flex-1">
+                  <span className="text-xs uppercase text-gray-500">
+                    G'alaba ehtimoli
+                  </span>
+                  <h2
+                    className={`${tenderDetails!.galaba_ehtimoli >= 75 ? "text-green-500" : tenderDetails!.galaba_ehtimoli >= 50 ? "text-yellow-500" : "text-red-500"}`}
+                  >
+                    {tenderDetails?.galaba_ehtimoli}%
+                  </h2>
+                </div>
+
+                <div className="bg-black/25 border border-[#2A3555] rounded-lg py-4 px-3 flex-1">
+                  <span className="text-xs uppercase text-gray-500">
+                    Raqiblar
+                  </span>
+                  <h2 className="text-[16px] text-gray-300 font-semibold">
+                    {tenderDetails?.raqiblar_soni} ta
+                  </h2>
+                </div>
+
+                <div className="bg-black/25 border border-[#2A3555] rounded-lg py-4 px-3 flex-1">
+                  <span className="text-xs uppercase text-gray-500">
+                    Muddat
+                  </span>
+                  <h2
+                    className={`${tenderDetails!.muddat <= 0 ? "text-[#EF4444]" : "text-yellow-500"} text-[16px]`}
+                  >
+                    {tenderDetails?.muddat} kun qoldi
+                  </h2>
+                </div>
+              </div>
+
+              <div className="pt-2">
+                <h2 className="text-base text-gray-300 uppercase">
+                  Loyiha haqida
+                </h2>
+                <span className="text-sm text-gray-500 pt-1">
+                  {tenderDetails?.loyiha_tavsifi}
+                </span>
+              </div>
+
+              <div className="pt-6">
+                <h2 className="text-base text-gray-300 uppercase pb-1">
+                  Talablar
+                </h2>
+
+                {tenderDetails?.talablar.map((item, index) => (
+                  <div key={index} className="flex items-center gap-2 pt-2">
+                    <CheckCircle2 className="w-5 h-5 text-(--prim)" />
+                    <span className="text-gray-500 text-sm">{item}</span>
+                  </div>
+                ))}
+              </div>
+
+              <div className="pt-6">
+                <h2 className="text-base text-gray-300 uppercase pb-1">
+                  Aloqa
+                </h2>
+
+                <div className="flex gap-2 items-center pt-2 cursor-pointer">
+                  <Mail className="text-(--prim) w-4 h-4" />
+                  <span className="text-(--prim) text-sm">
+                    {tenderDetails?.email}
+                  </span>
+                </div>
+
+                <div className="flex gap-2 items-center pt-1 cursor-pointer">
+                  <Phone className="text-(--prim) w-4 h-4" />
+                  <span className="text-(--prim) text-sm">
+                    {tenderDetails?.phone}
+                  </span>
+                </div>
+              </div>
+
+              <div className="pt-6 pb-4">
+                <div className="flex items-center gap-1.5">
+                  {tenderDetails?.teglari.map((tag, index) => (
+                    <div
+                      key={index}
+                      className="border border-gray-800 bg-[#0B0F1A] px-2 py-1 text-xs rounded text-gray-500"
+                    >
+                      {tag}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <div className="px-6 py-4 border-t border-[#2A3555] flex items-center justify-between gap-2">
+              <button className="px-3 bg-(--prim) hover:shadow-[0_0_10px_#b6ff3b] transition-all duration-300 rounded-lg py-2.5 border border-transparent font-semibold flex items-center gap-1 text-[16px] cursor-pointer">
+                <FileText className="w-4 h-4" />
+                Hujjat yaratish
+              </button>
+              <button className="px-3 hover:border-(--prim) btn overflow-hidden ease-[cubic-bezier(0.02,0.01,0.47,1)] transition-all duration-300 bg-black/25 rounded-lg py-2.5 border border-[#2A3555] text-white font-semibold flex items-center gap-1 text-[16px] text-sm cursor-pointer">
+                <Target className="text-white w-4 h-4" />
+                Strategiya ko'rish
+              </button>
+              <button className="px-3 hover:shadow-[0_0_10px_#b6ff3b] transition-all duration-300 bg-(--prim) rounded-lg py-2.5 border border-transparent font-semibold flex items-center gap-1 text-[16px] cursor-pointer">
+                <Scale className="w-4 h-4" />
+                Taqqoslash
+              </button>
+              <button className="px-3 btn overflow-hidden ease-[cubic-bezier(0.02,0.01,0.47,1)] transition-all duration-300 bg-black/25 rounded-lg border border-lime-400 text-lime-400 font-semibold py-2.5 flex items-center gap-1 text-[16px] cursor-pointer">
+                <Bot className="text-(--prim) w-5 h-5 pb-1" />
+                AI dan maslahat
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 }
