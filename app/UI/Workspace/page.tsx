@@ -10,6 +10,7 @@ import Strategy from "./Strategy/strategy";
 function Workspace() {
   const { t } = useTranslation();
   const [active, setActive] = useState<string>("tender");
+  const [selectedTenderId, setSelectedTenderId] = useState<number | null>(null);
 
   return (
     <>
@@ -112,11 +113,18 @@ function Workspace() {
             </div>
           </div>
 
-          {active === "tender" && <Tenders />}
+          {active === "tender" && (
+            <Tenders
+              setActive={setActive}
+              setSelectedTenderId={setSelectedTenderId}
+            />
+          )}
 
           {active === "document" && <Document />}
 
-          {active === "strategy" && <Strategy />}
+          {active === "strategy" && (
+            <Strategy selectedTenderId={selectedTenderId} />
+          )}
         </div>
 
         <div className="h-50"></div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import {
   LayoutGrid,
   Bot,
@@ -13,29 +14,33 @@ import {
   ChevronRight,
   X,
   Landmark,
-  ShieldCheck,
-  FileCheck,
-  ClipboardCheck,
-  Check,
   Mail,
   Phone,
-  FilePlus,
   FileText,
-  Compass,
   Target,
-  TrendingUp,
-  GitCompare,
   Scale,
   CheckCircle2,
+  Check,
+  TriangleAlert,
 } from "lucide-react";
 
 import tenderData from "@/app/Json/Tender.json";
 
-function Tenders() {
+type Props = {
+  setActive: React.Dispatch<React.SetStateAction<string>>;
+  setSelectedTenderId: React.Dispatch<React.SetStateAction<number | null>>;
+};
+
+function Tenders({ setActive, setSelectedTenderId }: Props) {
+  const { t } = useTranslation();
+
   const [category, setCategory] = useState<string>("Barchasi");
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [openCartIndex, setOpenCartIndex] = useState<null | number>(null);
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [comparison, setComparison] = useState<boolean>(false);
+  const [comparisonId, setComparisonId] = useState<number | null>(null);
+  const [comparisonIsOpen, setComparisonIsOpen] = useState<boolean>(false);
 
   const toggle = (index: number): void => {
     setOpenCartIndex(openCartIndex === index ? null : index);
@@ -51,14 +56,16 @@ function Tenders() {
     (item) => item.id === openCartIndex,
   );
 
+  const selectedTender = currentTenders.find((t) => t.id === comparisonId);
+
   return (
     <>
-      <div className=" px-4 2xl:px-6 pt-8 pb-10">
+      <div className="px-4 2xl:px-6 pt-8 pb-10">
         <div className="flex items-end gap-4 border border-[#2A3555] bg-black/25 px-6 py-3 rounded-xl w-full">
           {/*Soha  */}
           <div className="flex flex-col gap-2 flex-1">
             <span className="text-sm uppercase text-(--prim) tracking-wider">
-              Soha
+              {t("category")}
             </span>
 
             <div className="relative flex items-center gap-3 border border-[#2A3555] bg-[#0B0F1A] px-4 h-11 rounded-lg focus-within:border-(--prim) hover:border-(--prim) transition-all duration-200">
@@ -72,7 +79,7 @@ function Tenders() {
                 onChange={(e) => setCategory(e.target.value)}
                 className="absolute inset-0 opacity-0 cursor-pointer bg-[#0B0F1A] text-white"
               >
-                <option>Barchasi</option>
+                <option>{t("all")}</option>
                 <option>IT</option>
               </select>
             </div>
@@ -81,14 +88,14 @@ function Tenders() {
           {/*Qidiruv  */}
           <div className="flex flex-col gap-2 flex-1">
             <span className="text-sm uppercase text-(--prim) tracking-wider">
-              Qidirish
+              {t("search")}
             </span>
 
             <div className="flex items-center gap-3 border border-[#2A3555] bg-[#0B0F1A] px-4 h-11 rounded-lg hover:border-(--prim) focus-within:border-lime-400 transition-colors duration-200">
               <Search className="text-(--prim) w-5 h-5" />
               <input
                 type="text"
-                placeholder="Qidirish"
+                placeholder={`${t("search")}`}
                 className="bg-transparent outline-none text-white placeholder:text-gray-500 w-full "
               />
             </div>
@@ -96,18 +103,18 @@ function Tenders() {
 
           <div className="flex items-center gap-3">
             <button className="h-11 border border-transparent px-6 rounded-lg bg-lime-400 text-black font-semibold">
-              Qidirish
+              {t("search")}
             </button>
 
             <button className="h-11 px-3 rounded-lg border border-lime-400 text-lime-400 font-semibold flex items-center gap-2">
               <Bot className="w-5 h-5" />
-              AI Tavsiya
+              {t("ai_recommendation")}
             </button>
           </div>
         </div>
 
         <p className="text-gray-500 pt-10 Inter text-base">
-          60 ta tender topildi
+          60 {t("tenders_found")}
         </p>
 
         <div className="grid grid-cols-3 gap-3 2xl:gap-6 pt-4">
@@ -431,22 +438,343 @@ function Tenders() {
             </div>
 
             <div className="px-6 py-4 border-t border-[#2A3555] flex items-center justify-between gap-2">
-              <button className="px-3 bg-(--prim) hover:shadow-[0_0_10px_#b6ff3b] transition-all duration-300 rounded-lg py-2.5 border border-transparent font-semibold flex items-center gap-1 text-[16px] cursor-pointer">
+              <button
+                onClick={() => {
+                  setIsOpen(false);
+                  setActive("document");
+                }}
+                className="px-3 bg-(--prim) hover:shadow-[0_0_10px_#b6ff3b] transition-all duration-300 rounded-lg py-2.5 border border-transparent font-semibold flex items-center gap-1 text-[16px] cursor-pointer"
+              >
                 <FileText className="w-4 h-4" />
                 Hujjat yaratish
               </button>
-              <button className="px-3 hover:border-(--prim) btn overflow-hidden ease-[cubic-bezier(0.02,0.01,0.47,1)] transition-all duration-300 bg-black/25 rounded-lg py-2.5 border border-[#2A3555] text-white font-semibold flex items-center gap-1 text-[16px] text-sm cursor-pointer">
+
+              <button
+                onClick={() => {
+                  setSelectedTenderId(tenderDetails!.id);
+                  setActive("strategy");
+                  setIsOpen(false);
+                }}
+                className="px-3 hover:border-(--prim) btn overflow-hidden ease-[cubic-bezier(0.02,0.01,0.47,1)] transition-all duration-300 bg-black/25 rounded-lg py-2.5 border border-[#2A3555] text-white font-semibold flex items-center gap-1 text-[16px] text-sm cursor-pointer"
+              >
                 <Target className="text-white w-4 h-4" />
                 Strategiya ko'rish
               </button>
-              <button className="px-3 hover:shadow-[0_0_10px_#b6ff3b] transition-all duration-300 bg-(--prim) rounded-lg py-2.5 border border-transparent font-semibold flex items-center gap-1 text-[16px] cursor-pointer">
+
+              <button
+                onClick={() => {
+                  setComparison(true);
+                  setIsOpen(false);
+                }}
+                className="px-3 hover:shadow-[0_0_10px_#b6ff3b] transition-all duration-300 bg-(--prim) rounded-lg py-2.5 border border-transparent font-semibold flex items-center gap-1 text-[16px] cursor-pointer"
+              >
                 <Scale className="w-4 h-4" />
                 Taqqoslash
               </button>
+
               <button className="px-3 btn overflow-hidden ease-[cubic-bezier(0.02,0.01,0.47,1)] transition-all duration-300 bg-black/25 rounded-lg border border-lime-400 text-lime-400 font-semibold py-2.5 flex items-center gap-1 text-[16px] cursor-pointer">
                 <Bot className="text-(--prim) w-5 h-5 pb-1" />
                 AI dan maslahat
               </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {comparison && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center">
+          <div className="absolute inset-0 backdrop-blur-[1px] bg-black/30" />
+
+          <div className="relative w-[50%] max-w-md h-[65vh] bg-[#0B0F1A] border border-[#2A3555] rounded-xl shadow-2xl px-5 py-4 flex flex-col">
+            <h1 className="text-xl text-gray-200 font-semibold mb-4">
+              Taqqoslash uchun 2-tender tanlang
+            </h1>
+
+            <div className="flex-1 overflow-y-auto pr-1 space-y-3 custom-scroll">
+              {currentTenders
+                .filter((tender) => tender.id !== openCartIndex)
+                .map((tender) => (
+                  <div
+                    onClick={() => {
+                      setComparison(false);
+                      setComparisonId(tender.id);
+                      setComparisonIsOpen(true);
+                    }}
+                    key={tender.id}
+                    className="space-y-2 bg-black rounded-lg px-4 py-3.5 my-1.5 cursor-pointer tender-card border-l-3 border-lime-400"
+                  >
+                    <h1 className="text-sm text-white font-medium line-clamp-1">
+                      {tender.loyiha_nomi}
+                    </h1>
+
+                    <div className="flex items-center gap-2">
+                      <p className="text-gray-300 text-xs">{tender.byudjet}</p>
+                      <span className="w-1 h-1 bg-gray-300 rounded-full"></span>
+                      <p className="text-gray-300 text-xs">
+                        {tender.raqiblar_soni} raqib
+                      </p>
+                    </div>
+                  </div>
+                ))}
+            </div>
+
+            <button
+              onClick={() => setComparison(false)}
+              className="w-full mt-3 py-1.5 rounded-sm bg-gray-600 hover:bg-gray-700 text-white cursor-pointer transition-colors duration-300 font-medium"
+            >
+              Bekor qilish
+            </button>
+          </div>
+        </div>
+      )}
+
+      {comparisonIsOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center">
+          <div className="absolute inset-0 backdrop-blur-[1px] bg-black/30" />
+
+          <div className="relative w-[50%] bg-[#0B0F1A] border border-[#2A3555] rounded-xl shadow-2xl">
+            <div className="px-6 py-4 border-b border-[#2A3555]">
+              <div className="flex items-center justify-between">
+                <span className="text-2xl text-white font-semibold">
+                  Tender Taqqoslash
+                </span>
+
+                <button
+                  onClick={() => setComparisonIsOpen(false)}
+                  className="bg-gray-800 rounded-md h-8 w-8 flex items-center justify-center hover:border-red-500 border border-transparent transition-all duration-300 cursor-pointer"
+                >
+                  <X className="text-gray-300 w-5 h-5" />
+                </button>
+              </div>
+            </div>
+
+            <div className="py-4 px-6 flex items-center justify-between gap-4">
+              <div className="flex-1">
+                <div className="bg-[#23272F] rounded-lg p-4 border-l-4 border-[#B6FF00]">
+                  <h1 className="text-[#B6FF00] text-lg font-semibold line-clamp-2">
+                    {tenderDetails?.loyiha_nomi}
+                  </h1>
+
+                  <ul className="pt-4">
+                    <li className="flex items-center gap-1 text-[#8B90A0] font-medium">
+                      <span className="font-semibold text-base text-gray-400">
+                        Byudjet:
+                      </span>
+                      {tenderDetails?.byudjet}
+                    </li>
+
+                    <li className="flex items-center gap-1 text-[#8B90A0] font-medium">
+                      <span className="font-semibold text-base text-gray-400">
+                        Raqiblar:
+                      </span>
+                      {tenderDetails?.raqiblar_soni}
+                    </li>
+
+                    <li className="flex items-center gap-1 text-[#8B90A0] font-medium">
+                      <span className="font-semibold text-base text-gray-400">
+                        G'alaba:
+                      </span>
+
+                      <h2
+                        className={`${tenderDetails!.galaba_ehtimoli >= 75 ? "text-green-500" : tenderDetails!.galaba_ehtimoli >= 50 ? "text-yellow-500" : "text-red-500"}`}
+                      >
+                        {tenderDetails?.galaba_ehtimoli}%
+                      </h2>
+                    </li>
+
+                    <li className="flex items-center gap-1 text-[#8B90A0] font-medium">
+                      <span className="font-semibold text-base text-gray-400">
+                        Muddati:
+                      </span>
+                      {tenderDetails?.date}
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="pt-6">
+                  <h1 className="text-base text-[#B6FF00] font-semibold flex items-center gap-1">
+                    <Check className="w-4 h-4" />
+                    Tender 1 ni Afzalliklari
+                  </h1>
+
+                  <ul className="pt-2 space-y-2">
+                    <li className="flex items-center gap-1">
+                      <span className="bg-gray-400 w-1.5 h-1.5 rounded-full"></span>
+                      <h1 className="text-sm text-gray-300">
+                        {tenderDetails?.galaba_ehtimoli}% g'alaba ehtimoli
+                      </h1>
+                    </li>
+
+                    <li className="flex items-center gap-1">
+                      <span className="bg-gray-400 w-1.5 h-1.5 rounded-full"></span>
+                      <h1 className="text-sm text-gray-300">
+                        {tenderDetails?.raqiblar_soni} ta raqib
+                      </h1>
+                    </li>
+
+                    <li className="flex items-center gap-1">
+                      <span className="bg-gray-400 w-1.5 h-1.5 rounded-full"></span>
+                      <h1 className="text-sm text-gray-300">
+                        {tenderDetails?.byudjet} byudjet
+                      </h1>
+                    </li>
+
+                    <li className="flex items-center gap-1">
+                      <span className="bg-gray-400 w-1.5 h-1.5 rounded-full"></span>
+                      <h1 className="text-sm text-gray-300 flex gap-1">
+                        {tenderDetails?.teglari.map((item) => (
+                          <div key={item} className="">
+                            {item},
+                          </div>
+                        ))}{" "}
+                        sohalari
+                      </h1>
+                    </li>
+                  </ul>
+
+                  <h1 className="text-base text-red-700 font-semibold flex items-center gap-1 pt-6">
+                    <TriangleAlert className="w-4 h-4 text-yellow-500" />
+                    Tender 1 ni Xavflari
+                  </h1>
+
+                  <div className="flex items-center gap-1 pt-2">
+                    <span className="bg-gray-400 w-1.5 h-1.5 rounded-full"></span>
+                    <h1 className="text-sm text-gray-300">
+                      Muddati tez tugaydi — shoshilinch hujjatlar
+                    </h1>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex-1">
+                {selectedTender && (
+                  <>
+                    <div className="bg-[#1F2438] rounded-lg p-4 border-l-4 border-[#4D7CFF]">
+                      <h1 className="text-[#4D7CFF] text-lg font-semibold line-clamp-2">
+                        {selectedTender.loyiha_nomi}
+                      </h1>
+
+                      <ul className="pt-4">
+                        <li className="flex items-center gap-1 text-[#8B90A0] font-medium">
+                          <span className="text-gray-400">Byudjet:</span>
+                          {selectedTender.byudjet}
+                        </li>
+
+                        <li className="flex items-center gap-1 text-[#8B90A0] font-medium">
+                          <span className="text-gray-400">Raqiblar:</span>
+                          {selectedTender.raqiblar_soni}
+                        </li>
+
+                        <li className="flex items-center gap-1 text-[#8B90A0] font-medium">
+                          <span className="text-gray-400">G'alaba:</span>
+                          <span
+                            className={
+                              selectedTender.galaba_ehtimoli >= 75
+                                ? "text-green-500"
+                                : selectedTender.galaba_ehtimoli >= 50
+                                  ? "text-yellow-500"
+                                  : "text-red-500"
+                            }
+                          >
+                            {selectedTender.galaba_ehtimoli}%
+                          </span>
+                        </li>
+
+                        <li className="flex items-center gap-1 text-[#8B90A0] font-medium">
+                          <span className="text-gray-400">Muddati:</span>
+                          {selectedTender.date}
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div className="pt-6">
+                      <h1 className="text-base text-[#4D7CFF] font-semibold flex items-center gap-1">
+                        <Check className="w-4 h-4" />
+                        Tender 2 ni Afzalliklari
+                      </h1>
+
+                      <ul className="pt-2 space-y-2">
+                        <li className="flex items-center gap-1">
+                          <span className="bg-gray-400 w-1.5 h-1.5 rounded-full"></span>
+                          <h1 className="text-sm text-gray-300">
+                            {selectedTender.galaba_ehtimoli}% g'alaba ehtimoli
+                          </h1>
+                        </li>
+
+                        <li className="flex items-center gap-1">
+                          <span className="bg-gray-400 w-1.5 h-1.5 rounded-full"></span>
+                          <h1 className="text-sm text-gray-300">
+                            {selectedTender.raqiblar_soni} ta raqib
+                          </h1>
+                        </li>
+
+                        <li className="flex items-center gap-1">
+                          <span className="bg-gray-400 w-1.5 h-1.5 rounded-full"></span>
+                          <h1 className="text-sm text-gray-300">
+                            {selectedTender.byudjet} byudjet
+                          </h1>
+                        </li>
+                        <li className="flex items-center gap-1">
+                          <span className="bg-gray-400 w-1.5 h-1.5 rounded-full"></span>
+                          <h1 className="text-sm text-gray-300 flex gap-1">
+                            {selectedTender.teglari.map((item) => (
+                              <div key={item} className="">
+                                {item},
+                              </div>
+                            ))}{" "}
+                            sohalari
+                          </h1>
+                        </li>
+                      </ul>
+
+                      <h1 className="text-base text-red-700 font-semibold flex items-center gap-1 pt-6">
+                        <TriangleAlert className="w-4 h-4 text-yellow-500" />
+                        Tender 2 ni Xavflari
+                      </h1>
+
+                      <div className="flex items-center gap-1 pt-2">
+                        <span className="bg-gray-400 w-1.5 h-1.5 rounded-full"></span>
+                        <h1 className="text-sm text-gray-300">
+                          Muddati tez tugaydi — shoshilinch hujjatlar
+                        </h1>
+                      </div>
+                    </div>
+                  </>
+                )}
+              </div>
+            </div>
+
+            <div className="py-4 px-3 rounded-lg bg-[#1B2F38] mx-6 my-4 border-l-4 border-green-500">
+              <h1 className="text-base text-green-500 font-semibold uppercase">
+                Taklif
+              </h1>
+
+              <p className="text-white text-sm pt-1">
+                {(tenderDetails?.galaba_ehtimoli ?? 0) >
+                (selectedTender?.galaba_ehtimoli ?? 0)
+                  ? tenderDetails?.loyiha_nomi
+                  : selectedTender?.loyiha_nomi}
+                . Yuqori g'alaba ehtimoli va ko'proq vaqt mavjud.
+              </p>
+            </div>
+
+            <div className="bg-black mx-6 my-4 py-3 px-4 rounded-md flex">
+              <div className="w-full lg:w-1/2">
+                <h1 className="flex items-center gap-1 text-gray-300 text-sm font-normal">
+                  <span className="text-gray-400 font-semibold text-sm">
+                    Qiyinchi:
+                  </span>
+                  Oson
+                </h1>
+              </div>
+              <div className="w-full lg:w-1/2">
+                <h1 className="flex items-center gap-1 text-gray-300 text-sm font-normal">
+                  <span className="text-gray-400 font-semibold text-sm">
+                    Hujjatlar vaqti:
+                  </span>
+                  6 kun
+                </h1>
+              </div>
             </div>
           </div>
         </div>

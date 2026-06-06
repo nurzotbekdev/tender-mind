@@ -11,6 +11,7 @@
             "loyiha_tavsifi": "Toshkent shahar 47 ta davlat idorasi uchun zamonaviy IT infratuzilma: fiber optik tarmoq, bulut serverlar, kiberxavfsizlik tizimi.",
             "byudjet": "4 200 000 000 so'm",
             "muddat": 13,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 3,
             "galaba_ehtimoli": 87,
@@ -38,6 +39,7 @@
             "loyiha_tavsifi": "Labi-Hovuz maydonini rekonstruksiya: yo'lak, chiroqlar, suv fontan, daraxt ekish.",
             "byudjet": "3 200 000 000 so'm",
             "muddat": 10,
+            "date": "2026-04-30",
             "yangimi": true,
             "raqiblar_soni": 3,
             "galaba_ehtimoli": 79,
@@ -118,6 +120,7 @@
             "loyiha_tavsifi": "200 ta elektr avtobus, 20 ta zaryadlash stantsiyasi, 5 ta depo modernizatsiyasi.",
             "byudjet": "18 500 000 000 so'm",
             "muddat": 17,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 11,
             "galaba_ehtimoli": 47,
@@ -145,6 +148,7 @@
             "loyiha_tavsifi": "300 xonali o'quv sinf: Mac/Windows kompyuterlар, server lab, AI/ML workstation.",
             "byudjet": "750 000 000 so'm",
             "muddat": -10,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 3,
             "galaba_ehtimoli": 84,
@@ -172,6 +176,7 @@
             "loyiha_tavsifi": "Kuniga 1500 tonna chiqindi qayta ishlash zavodi. Plastik, metal, qog'oz qabul markazlari.",
             "byudjet": "35 000 000 000 so'm",
             "muddat": 17,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 18,
             "galaba_ehtimoli": 32,
@@ -199,6 +204,7 @@
             "loyiha_tavsifi": "Dron purkash tizimi, IoT namlik sensori, avtomatik sug'orish, agro monitoring platform.",
             "byudjet": "1 600 000 000 so'm",
             "muddat": 0,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 4,
             "galaba_ehtimoli": 73,
@@ -226,6 +232,7 @@
             "loyiha_tavsifi": "50 MVt quvvatli quyosh elektr stantsiyasi, transformator, 110 kV tarmoq ulash.",
             "byudjet": "42 000 000 000 so'm",
             "muddat": 10,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 20,
             "galaba_ehtimoli": 28,
@@ -253,6 +260,7 @@
             "loyiha_tavsifi": "15 ta marshrut, 80 ta yangi avtobus (Yutong/Higer), real-time GPS monitoring, plastik karta to'lov.",
             "byudjet": "22 000 000 000 so'm",
             "muddat": -17,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 13,
             "galaba_ehtimoli": 41,
@@ -280,6 +288,7 @@
             "loyiha_tavsifi": "45 km yangi kanal tizimi, 8 ta nasos stantsiyasi, 12,000 gektar yer sug'orish.",
             "byudjet": "5 100 000 000 so'm",
             "muddat": -27,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 5,
             "galaba_ehtimoli": 71,
@@ -306,6 +315,7 @@
             "loyiha_tavsifi": "40+ poliklinika va kasalxona uchun yagona tibbiy axborot tizimi: elektron tibbiy karta, laboratoriya, aptek moduli.",
             "byudjet": "1 800 000 000 so'm",
             "muddat": 26,
+            "date": "2026-04-30",
             "yangimi": true,
             "raqiblar_soni": 4,
             "galaba_ehtimoli": 79,
@@ -325,7 +335,7 @@
     ],
     "page2": [
         {
-            "id": 13,
+            "id": 1,
             "soha": "IT",
             "border_color": "#2E3A59",
             "bg_color": "#1A2233",
@@ -335,6 +345,7 @@
             "loyiha_tavsifi": "Toshkent shahar 47 ta davlat idorasi uchun zamonaviy IT infratuzilma: fiber optik tarmoq, bulut serverlar, kiberxavfsizlik tizimi.",
             "byudjet": "4 200 000 000 so'm",
             "muddat": 13,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 3,
             "galaba_ehtimoli": 87,
@@ -352,7 +363,7 @@
             "phone": "+998 73 239 01 01"
         },
         {
-            "id": 14,
+            "id": 2,
             "soha": "QURILISH",
             "border_color": "#8C6728",
             "bg_color": "#3A2B1F",
@@ -362,6 +373,7 @@
             "loyiha_tavsifi": "Labi-Hovuz maydonini rekonstruksiya: yo'lak, chiroqlar, suv fontan, daraxt ekish.",
             "byudjet": "3 200 000 000 so'm",
             "muddat": 10,
+            "date": "2026-04-30",
             "yangimi": true,
             "raqiblar_soni": 3,
             "galaba_ehtimoli": 79,
@@ -378,7 +390,7 @@
             "phone": "+998 65 223 00 00"
         },
         {
-            "id": 15,
+            "id": 3,
             "soha": "TIBBIYOT",
             "border_color": "#592E3A",
             "bg_color": "#331A22",
@@ -405,7 +417,7 @@
             "phone": "+998 71 214 11 00"
         },
         {
-            "id": 16,
+            "id": 4,
             "soha": "OZIQ-OVQAT",
             "border_color": "#0D7441",
             "bg_color": "#13352C",
@@ -432,7 +444,7 @@
             "phone": "+998 73 244 00 00"
         },
         {
-            "id": 17,
+            "id": 5,
             "soha": "TRANSPORT",
             "border_color": "#5E7412",
             "bg_color": "#31391A",
@@ -442,6 +454,7 @@
             "loyiha_tavsifi": "200 ta elektr avtobus, 20 ta zaryadlash stantsiyasi, 5 ta depo modernizatsiyasi.",
             "byudjet": "18 500 000 000 so'm",
             "muddat": 17,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 11,
             "galaba_ehtimoli": 47,
@@ -459,7 +472,7 @@
             "phone": "+998 71 244 55 00"
         },
         {
-            "id": 18,
+            "id": 6,
             "soha": "TA'LIM",
             "border_color": "#553E93",
             "bg_color": "#221F35",
@@ -469,6 +482,7 @@
             "loyiha_tavsifi": "300 xonali o'quv sinf: Mac/Windows kompyuterlар, server lab, AI/ML workstation.",
             "byudjet": "750 000 000 so'm",
             "muddat": -10,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 3,
             "galaba_ehtimoli": 84,
@@ -486,7 +500,7 @@
             "phone": "+998 71 202 00 00"
         },
         {
-            "id": 19,
+            "id": 7,
             "soha": "EKOLOGIYA",
             "border_color": "#00A86B",
             "bg_color": "#0D2B22",
@@ -496,6 +510,7 @@
             "loyiha_tavsifi": "Kuniga 1500 tonna chiqindi qayta ishlash zavodi. Plastik, metal, qog'oz qabul markazlari.",
             "byudjet": "35 000 000 000 so'm",
             "muddat": 17,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 18,
             "galaba_ehtimoli": 32,
@@ -513,7 +528,7 @@
             "phone": "+998 71 200 88 00"
         },
         {
-            "id": 20,
+            "id": 8,
             "soha": "QISHLOQ XO'JALIGI",
             "border_color": "#4B631A",
             "bg_color": "#222C18",
@@ -523,6 +538,7 @@
             "loyiha_tavsifi": "Dron purkash tizimi, IoT namlik sensori, avtomatik sug'orish, agro monitoring platform.",
             "byudjet": "1 600 000 000 so'm",
             "muddat": 0,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 4,
             "galaba_ehtimoli": 73,
@@ -540,7 +556,7 @@
             "phone": "+998 71 239 77 00"
         },
         {
-            "id": 21,
+            "id": 9,
             "soha": "EKOLOGIYA",
             "border_color": "#00A86B",
             "bg_color": "#0D2B22",
@@ -550,6 +566,7 @@
             "loyiha_tavsifi": "50 MVt quvvatli quyosh elektr stantsiyasi, transformator, 110 kV tarmoq ulash.",
             "byudjet": "42 000 000 000 so'm",
             "muddat": 10,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 20,
             "galaba_ehtimoli": 28,
@@ -567,7 +584,7 @@
             "phone": "+998 71 238 55 00"
         },
         {
-            "id": 22,
+            "id": 10,
             "soha": "TRANSPORT",
             "border_color": "#5E7412",
             "bg_color": "#31391A",
@@ -577,6 +594,7 @@
             "loyiha_tavsifi": "15 ta marshrut, 80 ta yangi avtobus (Yutong/Higer), real-time GPS monitoring, plastik karta to'lov.",
             "byudjet": "22 000 000 000 so'm",
             "muddat": -17,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 13,
             "galaba_ehtimoli": 41,
@@ -594,7 +612,7 @@
             "phone": "+998 75 222 00 00"
         },
         {
-            "id": 23,
+            "id": 11,
             "soha": "QURILISH",
             "border_color": "#8C6728",
             "bg_color": "#3A2B1F",
@@ -604,6 +622,7 @@
             "loyiha_tavsifi": "45 km yangi kanal tizimi, 8 ta nasos stantsiyasi, 12,000 gektar yer sug'orish.",
             "byudjet": "5 100 000 000 so'm",
             "muddat": -27,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 5,
             "galaba_ehtimoli": 71,
@@ -620,7 +639,7 @@
             "phone": "+998 71 239 00 00"
         },
         {
-            "id": 24,
+            "id": 12,
             "soha": "IT",
             "border_color": "#2E3A59",
             "bg_color": "#1A2233",
@@ -630,6 +649,7 @@
             "loyiha_tavsifi": "40+ poliklinika va kasalxona uchun yagona tibbiy axborot tizimi: elektron tibbiy karta, laboratoriya, aptek moduli.",
             "byudjet": "1 800 000 000 so'm",
             "muddat": 26,
+            "date": "2026-04-30",
             "yangimi": true,
             "raqiblar_soni": 4,
             "galaba_ehtimoli": 79,
@@ -649,7 +669,7 @@
     ],
     "page3": [
         {
-            "id": 25,
+            "id": 1,
             "soha": "IT",
             "border_color": "#2E3A59",
             "bg_color": "#1A2233",
@@ -659,6 +679,7 @@
             "loyiha_tavsifi": "Toshkent shahar 47 ta davlat idorasi uchun zamonaviy IT infratuzilma: fiber optik tarmoq, bulut serverlar, kiberxavfsizlik tizimi.",
             "byudjet": "4 200 000 000 so'm",
             "muddat": 13,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 3,
             "galaba_ehtimoli": 87,
@@ -676,7 +697,7 @@
             "phone": "+998 73 239 01 01"
         },
         {
-            "id": 26,
+            "id": 2,
             "soha": "QURILISH",
             "border_color": "#8C6728",
             "bg_color": "#3A2B1F",
@@ -686,6 +707,7 @@
             "loyiha_tavsifi": "Labi-Hovuz maydonini rekonstruksiya: yo'lak, chiroqlar, suv fontan, daraxt ekish.",
             "byudjet": "3 200 000 000 so'm",
             "muddat": 10,
+            "date": "2026-04-30",
             "yangimi": true,
             "raqiblar_soni": 3,
             "galaba_ehtimoli": 79,
@@ -702,7 +724,7 @@
             "phone": "+998 65 223 00 00"
         },
         {
-            "id": 27,
+            "id": 3,
             "soha": "TIBBIYOT",
             "border_color": "#592E3A",
             "bg_color": "#331A22",
@@ -729,7 +751,7 @@
             "phone": "+998 71 214 11 00"
         },
         {
-            "id": 28,
+            "id": 4,
             "soha": "OZIQ-OVQAT",
             "border_color": "#0D7441",
             "bg_color": "#13352C",
@@ -756,7 +778,7 @@
             "phone": "+998 73 244 00 00"
         },
         {
-            "id": 29,
+            "id": 5,
             "soha": "TRANSPORT",
             "border_color": "#5E7412",
             "bg_color": "#31391A",
@@ -766,6 +788,7 @@
             "loyiha_tavsifi": "200 ta elektr avtobus, 20 ta zaryadlash stantsiyasi, 5 ta depo modernizatsiyasi.",
             "byudjet": "18 500 000 000 so'm",
             "muddat": 17,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 11,
             "galaba_ehtimoli": 47,
@@ -783,7 +806,7 @@
             "phone": "+998 71 244 55 00"
         },
         {
-            "id": 30,
+            "id": 6,
             "soha": "TA'LIM",
             "border_color": "#553E93",
             "bg_color": "#221F35",
@@ -793,6 +816,7 @@
             "loyiha_tavsifi": "300 xonali o'quv sinf: Mac/Windows kompyuterlар, server lab, AI/ML workstation.",
             "byudjet": "750 000 000 so'm",
             "muddat": -10,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 3,
             "galaba_ehtimoli": 84,
@@ -810,7 +834,7 @@
             "phone": "+998 71 202 00 00"
         },
         {
-            "id": 31,
+            "id": 7,
             "soha": "EKOLOGIYA",
             "border_color": "#00A86B",
             "bg_color": "#0D2B22",
@@ -820,6 +844,7 @@
             "loyiha_tavsifi": "Kuniga 1500 tonna chiqindi qayta ishlash zavodi. Plastik, metal, qog'oz qabul markazlari.",
             "byudjet": "35 000 000 000 so'm",
             "muddat": 17,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 18,
             "galaba_ehtimoli": 32,
@@ -837,7 +862,7 @@
             "phone": "+998 71 200 88 00"
         },
         {
-            "id": 32,
+            "id": 8,
             "soha": "QISHLOQ XO'JALIGI",
             "border_color": "#4B631A",
             "bg_color": "#222C18",
@@ -847,6 +872,7 @@
             "loyiha_tavsifi": "Dron purkash tizimi, IoT namlik sensori, avtomatik sug'orish, agro monitoring platform.",
             "byudjet": "1 600 000 000 so'm",
             "muddat": 0,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 4,
             "galaba_ehtimoli": 73,
@@ -864,7 +890,7 @@
             "phone": "+998 71 239 77 00"
         },
         {
-            "id": 33,
+            "id": 9,
             "soha": "EKOLOGIYA",
             "border_color": "#00A86B",
             "bg_color": "#0D2B22",
@@ -874,6 +900,7 @@
             "loyiha_tavsifi": "50 MVt quvvatli quyosh elektr stantsiyasi, transformator, 110 kV tarmoq ulash.",
             "byudjet": "42 000 000 000 so'm",
             "muddat": 10,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 20,
             "galaba_ehtimoli": 28,
@@ -891,7 +918,7 @@
             "phone": "+998 71 238 55 00"
         },
         {
-            "id": 34,
+            "id": 10,
             "soha": "TRANSPORT",
             "border_color": "#5E7412",
             "bg_color": "#31391A",
@@ -901,6 +928,7 @@
             "loyiha_tavsifi": "15 ta marshrut, 80 ta yangi avtobus (Yutong/Higer), real-time GPS monitoring, plastik karta to'lov.",
             "byudjet": "22 000 000 000 so'm",
             "muddat": -17,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 13,
             "galaba_ehtimoli": 41,
@@ -918,7 +946,7 @@
             "phone": "+998 75 222 00 00"
         },
         {
-            "id": 35,
+            "id": 11,
             "soha": "QURILISH",
             "border_color": "#8C6728",
             "bg_color": "#3A2B1F",
@@ -928,6 +956,7 @@
             "loyiha_tavsifi": "45 km yangi kanal tizimi, 8 ta nasos stantsiyasi, 12,000 gektar yer sug'orish.",
             "byudjet": "5 100 000 000 so'm",
             "muddat": -27,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 5,
             "galaba_ehtimoli": 71,
@@ -944,7 +973,7 @@
             "phone": "+998 71 239 00 00"
         },
         {
-            "id": 36,
+            "id": 12,
             "soha": "IT",
             "border_color": "#2E3A59",
             "bg_color": "#1A2233",
@@ -954,6 +983,7 @@
             "loyiha_tavsifi": "40+ poliklinika va kasalxona uchun yagona tibbiy axborot tizimi: elektron tibbiy karta, laboratoriya, aptek moduli.",
             "byudjet": "1 800 000 000 so'm",
             "muddat": 26,
+            "date": "2026-04-30",
             "yangimi": true,
             "raqiblar_soni": 4,
             "galaba_ehtimoli": 79,
@@ -973,7 +1003,7 @@
     ],
     "page4": [
         {
-            "id": 37,
+            "id": 1,
             "soha": "IT",
             "border_color": "#2E3A59",
             "bg_color": "#1A2233",
@@ -983,6 +1013,7 @@
             "loyiha_tavsifi": "Toshkent shahar 47 ta davlat idorasi uchun zamonaviy IT infratuzilma: fiber optik tarmoq, bulut serverlar, kiberxavfsizlik tizimi.",
             "byudjet": "4 200 000 000 so'm",
             "muddat": 13,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 3,
             "galaba_ehtimoli": 87,
@@ -1000,7 +1031,7 @@
             "phone": "+998 73 239 01 01"
         },
         {
-            "id": 38,
+            "id": 2,
             "soha": "QURILISH",
             "border_color": "#8C6728",
             "bg_color": "#3A2B1F",
@@ -1010,6 +1041,7 @@
             "loyiha_tavsifi": "Labi-Hovuz maydonini rekonstruksiya: yo'lak, chiroqlar, suv fontan, daraxt ekish.",
             "byudjet": "3 200 000 000 so'm",
             "muddat": 10,
+            "date": "2026-04-30",
             "yangimi": true,
             "raqiblar_soni": 3,
             "galaba_ehtimoli": 79,
@@ -1026,7 +1058,7 @@
             "phone": "+998 65 223 00 00"
         },
         {
-            "id": 39,
+            "id": 3,
             "soha": "TIBBIYOT",
             "border_color": "#592E3A",
             "bg_color": "#331A22",
@@ -1053,7 +1085,7 @@
             "phone": "+998 71 214 11 00"
         },
         {
-            "id": 40,
+            "id": 4,
             "soha": "OZIQ-OVQAT",
             "border_color": "#0D7441",
             "bg_color": "#13352C",
@@ -1080,7 +1112,7 @@
             "phone": "+998 73 244 00 00"
         },
         {
-            "id": 41,
+            "id": 5,
             "soha": "TRANSPORT",
             "border_color": "#5E7412",
             "bg_color": "#31391A",
@@ -1090,6 +1122,7 @@
             "loyiha_tavsifi": "200 ta elektr avtobus, 20 ta zaryadlash stantsiyasi, 5 ta depo modernizatsiyasi.",
             "byudjet": "18 500 000 000 so'm",
             "muddat": 17,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 11,
             "galaba_ehtimoli": 47,
@@ -1107,7 +1140,7 @@
             "phone": "+998 71 244 55 00"
         },
         {
-            "id": 42,
+            "id": 6,
             "soha": "TA'LIM",
             "border_color": "#553E93",
             "bg_color": "#221F35",
@@ -1117,6 +1150,7 @@
             "loyiha_tavsifi": "300 xonali o'quv sinf: Mac/Windows kompyuterlар, server lab, AI/ML workstation.",
             "byudjet": "750 000 000 so'm",
             "muddat": -10,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 3,
             "galaba_ehtimoli": 84,
@@ -1134,7 +1168,7 @@
             "phone": "+998 71 202 00 00"
         },
         {
-            "id": 43,
+            "id": 7,
             "soha": "EKOLOGIYA",
             "border_color": "#00A86B",
             "bg_color": "#0D2B22",
@@ -1144,6 +1178,7 @@
             "loyiha_tavsifi": "Kuniga 1500 tonna chiqindi qayta ishlash zavodi. Plastik, metal, qog'oz qabul markazlari.",
             "byudjet": "35 000 000 000 so'm",
             "muddat": 17,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 18,
             "galaba_ehtimoli": 32,
@@ -1161,7 +1196,7 @@
             "phone": "+998 71 200 88 00"
         },
         {
-            "id": 44,
+            "id": 8,
             "soha": "QISHLOQ XO'JALIGI",
             "border_color": "#4B631A",
             "bg_color": "#222C18",
@@ -1171,6 +1206,7 @@
             "loyiha_tavsifi": "Dron purkash tizimi, IoT namlik sensori, avtomatik sug'orish, agro monitoring platform.",
             "byudjet": "1 600 000 000 so'm",
             "muddat": 0,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 4,
             "galaba_ehtimoli": 73,
@@ -1188,7 +1224,7 @@
             "phone": "+998 71 239 77 00"
         },
         {
-            "id": 45,
+            "id": 9,
             "soha": "EKOLOGIYA",
             "border_color": "#00A86B",
             "bg_color": "#0D2B22",
@@ -1198,6 +1234,7 @@
             "loyiha_tavsifi": "50 MVt quvvatli quyosh elektr stantsiyasi, transformator, 110 kV tarmoq ulash.",
             "byudjet": "42 000 000 000 so'm",
             "muddat": 10,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 20,
             "galaba_ehtimoli": 28,
@@ -1215,7 +1252,7 @@
             "phone": "+998 71 238 55 00"
         },
         {
-            "id": 46,
+            "id": 10,
             "soha": "TRANSPORT",
             "border_color": "#5E7412",
             "bg_color": "#31391A",
@@ -1225,6 +1262,7 @@
             "loyiha_tavsifi": "15 ta marshrut, 80 ta yangi avtobus (Yutong/Higer), real-time GPS monitoring, plastik karta to'lov.",
             "byudjet": "22 000 000 000 so'm",
             "muddat": -17,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 13,
             "galaba_ehtimoli": 41,
@@ -1242,7 +1280,7 @@
             "phone": "+998 75 222 00 00"
         },
         {
-            "id": 47,
+            "id": 11,
             "soha": "QURILISH",
             "border_color": "#8C6728",
             "bg_color": "#3A2B1F",
@@ -1252,6 +1290,7 @@
             "loyiha_tavsifi": "45 km yangi kanal tizimi, 8 ta nasos stantsiyasi, 12,000 gektar yer sug'orish.",
             "byudjet": "5 100 000 000 so'm",
             "muddat": -27,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 5,
             "galaba_ehtimoli": 71,
@@ -1268,7 +1307,7 @@
             "phone": "+998 71 239 00 00"
         },
         {
-            "id": 48,
+            "id": 12,
             "soha": "IT",
             "border_color": "#2E3A59",
             "bg_color": "#1A2233",
@@ -1278,6 +1317,7 @@
             "loyiha_tavsifi": "40+ poliklinika va kasalxona uchun yagona tibbiy axborot tizimi: elektron tibbiy karta, laboratoriya, aptek moduli.",
             "byudjet": "1 800 000 000 so'm",
             "muddat": 26,
+            "date": "2026-04-30",
             "yangimi": true,
             "raqiblar_soni": 4,
             "galaba_ehtimoli": 79,
@@ -1297,7 +1337,7 @@
     ],
     "page5": [
         {
-            "id": 49,
+            "id": 1,
             "soha": "IT",
             "border_color": "#2E3A59",
             "bg_color": "#1A2233",
@@ -1307,6 +1347,7 @@
             "loyiha_tavsifi": "Toshkent shahar 47 ta davlat idorasi uchun zamonaviy IT infratuzilma: fiber optik tarmoq, bulut serverlar, kiberxavfsizlik tizimi.",
             "byudjet": "4 200 000 000 so'm",
             "muddat": 13,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 3,
             "galaba_ehtimoli": 87,
@@ -1324,7 +1365,7 @@
             "phone": "+998 73 239 01 01"
         },
         {
-            "id": 50,
+            "id": 2,
             "soha": "QURILISH",
             "border_color": "#8C6728",
             "bg_color": "#3A2B1F",
@@ -1334,6 +1375,7 @@
             "loyiha_tavsifi": "Labi-Hovuz maydonini rekonstruksiya: yo'lak, chiroqlar, suv fontan, daraxt ekish.",
             "byudjet": "3 200 000 000 so'm",
             "muddat": 10,
+            "date": "2026-04-30",
             "yangimi": true,
             "raqiblar_soni": 3,
             "galaba_ehtimoli": 79,
@@ -1350,7 +1392,7 @@
             "phone": "+998 65 223 00 00"
         },
         {
-            "id": 51,
+            "id": 3,
             "soha": "TIBBIYOT",
             "border_color": "#592E3A",
             "bg_color": "#331A22",
@@ -1377,7 +1419,7 @@
             "phone": "+998 71 214 11 00"
         },
         {
-            "id": 52,
+            "id": 4,
             "soha": "OZIQ-OVQAT",
             "border_color": "#0D7441",
             "bg_color": "#13352C",
@@ -1404,7 +1446,7 @@
             "phone": "+998 73 244 00 00"
         },
         {
-            "id": 53,
+            "id": 5,
             "soha": "TRANSPORT",
             "border_color": "#5E7412",
             "bg_color": "#31391A",
@@ -1414,6 +1456,7 @@
             "loyiha_tavsifi": "200 ta elektr avtobus, 20 ta zaryadlash stantsiyasi, 5 ta depo modernizatsiyasi.",
             "byudjet": "18 500 000 000 so'm",
             "muddat": 17,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 11,
             "galaba_ehtimoli": 47,
@@ -1431,7 +1474,7 @@
             "phone": "+998 71 244 55 00"
         },
         {
-            "id": 54,
+            "id": 6,
             "soha": "TA'LIM",
             "border_color": "#553E93",
             "bg_color": "#221F35",
@@ -1441,6 +1484,7 @@
             "loyiha_tavsifi": "300 xonali o'quv sinf: Mac/Windows kompyuterlар, server lab, AI/ML workstation.",
             "byudjet": "750 000 000 so'm",
             "muddat": -10,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 3,
             "galaba_ehtimoli": 84,
@@ -1458,7 +1502,7 @@
             "phone": "+998 71 202 00 00"
         },
         {
-            "id": 55,
+            "id": 7,
             "soha": "EKOLOGIYA",
             "border_color": "#00A86B",
             "bg_color": "#0D2B22",
@@ -1468,6 +1512,7 @@
             "loyiha_tavsifi": "Kuniga 1500 tonna chiqindi qayta ishlash zavodi. Plastik, metal, qog'oz qabul markazlari.",
             "byudjet": "35 000 000 000 so'm",
             "muddat": 17,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 18,
             "galaba_ehtimoli": 32,
@@ -1485,7 +1530,7 @@
             "phone": "+998 71 200 88 00"
         },
         {
-            "id": 56,
+            "id": 8,
             "soha": "QISHLOQ XO'JALIGI",
             "border_color": "#4B631A",
             "bg_color": "#222C18",
@@ -1495,6 +1540,7 @@
             "loyiha_tavsifi": "Dron purkash tizimi, IoT namlik sensori, avtomatik sug'orish, agro monitoring platform.",
             "byudjet": "1 600 000 000 so'm",
             "muddat": 0,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 4,
             "galaba_ehtimoli": 73,
@@ -1512,7 +1558,7 @@
             "phone": "+998 71 239 77 00"
         },
         {
-            "id": 57,
+            "id": 9,
             "soha": "EKOLOGIYA",
             "border_color": "#00A86B",
             "bg_color": "#0D2B22",
@@ -1522,6 +1568,7 @@
             "loyiha_tavsifi": "50 MVt quvvatli quyosh elektr stantsiyasi, transformator, 110 kV tarmoq ulash.",
             "byudjet": "42 000 000 000 so'm",
             "muddat": 10,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 20,
             "galaba_ehtimoli": 28,
@@ -1539,7 +1586,7 @@
             "phone": "+998 71 238 55 00"
         },
         {
-            "id": 58,
+            "id": 10,
             "soha": "TRANSPORT",
             "border_color": "#5E7412",
             "bg_color": "#31391A",
@@ -1549,6 +1596,7 @@
             "loyiha_tavsifi": "15 ta marshrut, 80 ta yangi avtobus (Yutong/Higer), real-time GPS monitoring, plastik karta to'lov.",
             "byudjet": "22 000 000 000 so'm",
             "muddat": -17,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 13,
             "galaba_ehtimoli": 41,
@@ -1566,7 +1614,7 @@
             "phone": "+998 75 222 00 00"
         },
         {
-            "id": 59,
+            "id": 11,
             "soha": "QURILISH",
             "border_color": "#8C6728",
             "bg_color": "#3A2B1F",
@@ -1576,6 +1624,7 @@
             "loyiha_tavsifi": "45 km yangi kanal tizimi, 8 ta nasos stantsiyasi, 12,000 gektar yer sug'orish.",
             "byudjet": "5 100 000 000 so'm",
             "muddat": -27,
+            "date": "2026-04-30",
             "yangimi": false,
             "raqiblar_soni": 5,
             "galaba_ehtimoli": 71,
@@ -1592,7 +1641,7 @@
             "phone": "+998 71 239 00 00"
         },
         {
-            "id": 60,
+            "id": 12,
             "soha": "IT",
             "border_color": "#2E3A59",
             "bg_color": "#1A2233",
@@ -1602,6 +1651,7 @@
             "loyiha_tavsifi": "40+ poliklinika va kasalxona uchun yagona tibbiy axborot tizimi: elektron tibbiy karta, laboratoriya, aptek moduli.",
             "byudjet": "1 800 000 000 so'm",
             "muddat": 26,
+            "date": "2026-04-30",
             "yangimi": true,
             "raqiblar_soni": 4,
             "galaba_ehtimoli": 79,
